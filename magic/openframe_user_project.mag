@@ -1,0 +1,28 @@
+magic
+tech ihp-sg13cmos5l
+timestamp 1773343416
+<< metal5 >>
+rect 288 107189 8570 108989
+rect 71008 47345 72808 241097
+rect 73038 47363 74838 241115
+rect 75125 47354 76925 241095
+rect 77212 47356 79012 241097
+rect 142674 211403 150956 213203
+rect 142674 120085 150956 121885
+rect 218 4600 4889 6400
+rect 144301 249 146101 8790
+use openframe_project_wrapper  openframe_project_wrapper_0
+timestamp 1772719364
+transform 1 0 -27900 0 1 -27900
+box 27900 27900 179100 283100
+use power_stage  power_stage_0 ../ip/sg13cmos5l_ocd_ip__analog_switches/magic
+array 0 0 12568 0 7 26042
+timestamp 1772660156
+transform 1 0 59288 0 1 47919
+box -522 -2928 11933 11973
+use power_stage  power_stage_1
+array 0 0 12568 0 7 26042
+timestamp 1772660156
+transform -1 0 90713 0 1 47929
+box -522 -2928 11933 11973
+<< end >>

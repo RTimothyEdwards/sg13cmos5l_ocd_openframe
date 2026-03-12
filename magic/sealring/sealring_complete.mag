@@ -1,0 +1,45 @@
+magic
+tech ihp-sg13cmos5l
+timestamp 1772318024
+<< checkpaint >>
+rect -1000 312137 211220 315220
+rect -1000 310387 3833 312137
+rect 206387 310387 211220 312137
+rect -1000 3833 2083 310387
+rect 208137 3833 211220 310387
+rect -1000 2083 3833 3833
+rect 206387 2083 211220 3833
+rect -1000 -1000 211220 2083
+use sealring_corner  sealring_corner_ne
+timestamp 1772318024
+transform -1 0 209500 0 -1 313500
+box -720 -720 2113 2113
+use sealring_corner  sealring_corner_nw
+timestamp 1772318024
+transform 0 1 720 -1 0 313500
+box -720 -720 2113 2113
+use sealring_corner  sealring_corner_se
+timestamp 1772318024
+transform 0 -1 209500 1 0 720
+box -720 -720 2113 2113
+use sealring_corner  sealring_corner_sw
+timestamp 1772318024
+transform 1 0 720 0 1 720
+box -720 -720 2113 2113
+use sealring_side_leftright  sealring_side_e
+timestamp 1772318024
+transform 0 -1 209500 1 0 2820
+box -13 -720 308593 363
+use sealring_side_topbottom  sealring_side_n
+timestamp 1772318024
+transform -1 0 207400 0 -1 313500
+box -13 -720 204593 363
+use sealring_side_topbottom  sealring_side_s
+timestamp 1772318024
+transform 1 0 2820 0 1 720
+box -13 -720 204593 363
+use sealring_side_leftright  sealring_side_w
+timestamp 1772318024
+transform 0 1 720 -1 0 311400
+box -13 -720 308593 363
+<< end >>

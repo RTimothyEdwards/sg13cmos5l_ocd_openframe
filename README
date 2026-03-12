@@ -1,0 +1,54 @@
+Caravel Openframe for IHP SG13CMOS5L
+---------------------------------------------------------
+
+These instructions are currently very incomplete.
+
+The top level layout is "caravel_openframe.mag"
+
+To create a new openframe chip with a custom user project:
+
+(1)  Clone or fork this repository.  You probably want to create
+     a new branch for the project;  then each project has the
+     same upstream openframe repository but exists in its own
+     development branch.
+(2)  Run the script scripts/setup.sh to import IHP open PDK
+     library views into local .mag files
+(3)  Add verilog for the user project in ../verilog/rtl/
+(4)  The user project verilog top level should be named
+     "openframe_user_project" in file "openframe_user_project.v",
+     replacing the template file.
+(5)  If there are multiple verilog files in the user project,
+     either include them from the top level verilog or add them
+     to "netlists.v"
+(6)  Most scripts are run from the mag/ directory.
+(7)  Set the user ID for the project with ../scripts/set_user_id.sh.
+(8)  Do a top-level extraction for LVS with ../scripts/run_extract.sh
+(9)  Run LVS with run_lvs.sh in the ../lvs/ directory.
+(10) Generate final GDS using the script ../scripts/run_gen_gds.sh
+
+
+Generating the user project example
+-------------------------------------------------------------------
+The user project example in this repository is a framework for
+an analog "sub-harness" capable of aggregating a number of analog
+projects, each one able to be separately powered.
+
+The user project has dependent libraries which are hierarchical
+and therefore also independent git projects.  They should be
+instantiated as git submodules.  The submodules can be cloned with
+the project by doing
+
+git clone https://github.com/RTimothyEdwards/sg13cmos5l_ocd_ip__openframe.git --recurse-submodules
+
+or after cloning, by doing
+
+git submodule update --init --recursive
+
+That initializes the dependent repositories used for the project
+example.  For a different project, new submodules can be added by
+first creating the IP as a git project, use
+
+git submodule add <repository_URL>
+
+For simplicity, keep the subdirectory name the same as the repository.
+After adding the submodule, commit and push as usual.
