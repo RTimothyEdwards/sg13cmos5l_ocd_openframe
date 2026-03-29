@@ -17,7 +17,7 @@
 #	This script needs to be run only once.  It cannot be run again until
 #	the padframe cell is deleted.
 
-echo ${PDK_ROOT:=/home/tim/gits/IHP-Open-PDK-CMOS} > /dev/null
+echo ${PDK_ROOT:=/home/tim/gits} > /dev/null
 echo ${PDK:=ihp-sg13cmos5l} > /dev/null
 
 cd magic

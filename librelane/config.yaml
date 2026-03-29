@@ -35,93 +35,54 @@ meta:
     # Some macros may overlap on purpose
     Checker.IllegalOverlap: null
 
-DESIGN_NAME: openframe_project_wrapper
+DESIGN_NAME: housekeeping_top
 VERILOG_FILES:
 - dir::../verilog/rtl/synth_defs.v
-- dir::../verilog/rtl/openframe_project_wrapper.v
-- dir::../verilog/rtl/openframe_user_project.v
-- dir::../verilog/rtl/clock_div.v
-- dir::../verilog/rtl/clock_routing.v
-- dir::../verilog/rtl/counter_timer_high.v
-- dir::../verilog/rtl/counter_timer_low.v
-- dir::../verilog/rtl/debug_regs.v
-- dir::../verilog/rtl/dll.v
-- dir::../verilog/rtl/dll_controller.v
-- dir::../verilog/rtl/gpio_vector_wb.v
-- dir::../verilog/rtl/gpio_wb.v
-- dir::../verilog/rtl/housekeeping.v
 - dir::../verilog/rtl/housekeeping_spi.v
-- dir::../verilog/rtl/intercon_wb.v
-- dir::../verilog/rtl/mem_wb.v
-- dir::../verilog/rtl/picosoc.v
-- dir::../verilog/rtl/picorv32.v
-- dir::../verilog/rtl/simple_spi_master.v
-- dir::../verilog/rtl/simpleuart.v
-- dir::../verilog/rtl/spimemio.v
+- dir::../verilog/rtl/housekeeping.v
+- dir::../verilog/rtl/housekeeping_top.v
 
 DEDUPLICATE_CORNERS: true
 
-# Use the Avalon Semiconductor 3.3V standard cell libraries
-STD_CELL_LIBRARY: gf180mcu_as_sc_mcu7t3v3
-STD_CELL_LIBRARY_OPT: gf180mcu_as_sc_mcu7t3v3
+# Use the IHP CMOS5L standard cell library
+STD_CELL_LIBRARY: sg13cmos5l_stdcell
 
 # Technology libs
 LIB:
-  "*_tt_025C_3v30":
-    - pdk_dir::libs.ref/gf180mcu_as_sc_mcu7t3v3/lib/gf180mcu_as_sc_mcu7t3v3__tt_025C_3v30.lib
-    - pdk_dir::libs.ref/gf180mcu_ocd_ip_sram/lib/gf180mcu_ocd_ip_sram__sram512x8m8wm1__tt_025C_3v30.lib
-    - pdk_dir::libs.ref/gf180mcu_ocd_ip_sram/lib/gf180mcu_ocd_ip_sram__sram256x8m8wm1__tt_025C_3v30.lib
-    - dir::../ip/ring_osc2x13/lib/ring_osc2x13.lib
+  "nom_typ_1p20V_25C":
+    - pdk_dir::libs.ref/sg13cmos5l_stdcell/lib/sg13cmos5l_stdcell_typ_1p20V_25C.lib
 
-  "*_ss_n40C_3v00":
-    - pdk_dir::libs.ref/gf180mcu_as_sc_mcu7t3v3/lib/gf180mcu_as_sc_mcu7t3v3__tt_025C_3v30.lib
-    - pdk_dir::libs.ref/gf180mcu_ocd_ip_sram/lib/gf180mcu_ocd_ip_sram__sram512x8m8wm1__ss_n40C_3v00.lib
-    - pdk_dir::libs.ref/gf180mcu_ocd_ip_sram/lib/gf180mcu_ocd_ip_sram__sram256x8m8wm1__ss_n40C_3v00.lib
-    - dir::../ip/ring_osc2x13/lib/ring_osc2x13.lib
+  "nom_typ_1p50V_25C":
+    - pdk_dir::libs.ref/sg13cmos5l_stdcell/lib/sg13cmos5l_stdcell_typ_1p50V_25C.lib
 
-  "*_ss_125C_3v00":
-    - pdk_dir::libs.ref/gf180mcu_as_sc_mcu7t3v3/lib/gf180mcu_as_sc_mcu7t3v3__tt_025C_3v30.lib
-    - pdk_dir::libs.ref/gf180mcu_ocd_ip_sram/lib/gf180mcu_ocd_ip_sram__sram512x8m8wm1__ss_125C_3v00.lib
-    - pdk_dir::libs.ref/gf180mcu_ocd_ip_sram/lib/gf180mcu_ocd_ip_sram__sram256x8m8wm1__ss_125C_3v00.lib
-    - dir::../ip/ring_osc2x13/lib/ring_osc2x13.lib
+  "nom_slow_1p35V_125C":
+    - pdk_dir::libs.ref/sg13cmos5l_stdcell/lib/sg13cmos5l_stdcell_slow_1p35V_125C.lib
 
-  "*_ff_n40C_3v60":
-    - pdk_dir::libs.ref/gf180mcu_as_sc_mcu7t3v3/lib/gf180mcu_as_sc_mcu7t3v3__ff_n40C_3v60.lib
-    - pdk_dir::libs.ref/gf180mcu_ocd_ip_sram/lib/gf180mcu_ocd_ip_sram__sram512x8m8wm1__ff_n40C_3v60.lib
-    - pdk_dir::libs.ref/gf180mcu_ocd_ip_sram/lib/gf180mcu_ocd_ip_sram__sram256x8m8wm1__ff_n40C_3v60.lib
-    - dir::../ip/ring_osc2x13/lib/ring_osc2x13.lib
+  "nom_slow_1p08V_125C":
+    - pdk_dir::libs.ref/sg13cmos5l_stdcell/lib/sg13cmos5l_stdcell_slow_1p08V_125C.lib
 
-  "*_ff_125C_3v60":
-    - pdk_dir::libs.ref/gf180mcu_as_sc_mcu7t3v3/lib/gf180mcu_as_sc_mcu7t3v3__ff_n40C_3v60.lib
-    - pdk_dir::libs.ref/gf180mcu_ocd_ip_sram/lib/gf180mcu_ocd_ip_sram__sram512x8m8wm1__ff_125C_3v60.lib
-    - pdk_dir::libs.ref/gf180mcu_ocd_ip_sram/lib/gf180mcu_ocd_ip_sram__sram256x8m8wm1__ff_125C_3v60.lib
-    - dir::../ip/ring_osc2x13/lib/ring_osc2x13.lib
+  "nom_fast_1p32V_m40C":
+    - pdk_dir::libs.ref/sg13cmos5l_stdcell/lib/sg13cmos5l_stdcell_fast_1p32V_m40C.lib
+
+  "nom_fast_1p65V_m40C":
+    - pdk_dir::libs.ref/sg13cmos5l_stdcell/lib/sg13cmos5l_stdcell_fast_1p65V_m40C.lib
 
 
 # Corners
 STA_CORNERS:
-  - nom_tt_025C_3v30
-  - nom_ss_n40C_3v00
-  - nom_ss_125C_3v00
-  - nom_ff_n40C_3v60
-  - nom_ff_125C_3v60
-  - min_tt_025C_3v30
-  - min_ss_n40C_3v00
-  - min_ss_125C_3v00
-  - min_ff_n40C_3v60
-  - min_ff_125C_3v60
-  - max_tt_025C_3v30
-  - max_ss_n40C_3v00
-  - max_ss_125C_3v00
-  - max_ff_n40C_3v60
-  - max_ff_125C_3v60
+  - nom_typ_1p20V_25C
+  - nom_typ_1p50V_25C
+  - nom_slow_1p35V_125C
+  - nom_slow_1p08V_125C
+  - nom_fast_1p32V_m40C
+  - nom_fast_1p65V_m40C
 
 CTS_CLK_BUFFERS:
-  - "gf180mcu_as_sc_mcu9t3v3__clkbuff_12"
-  - "gf180mcu_as_sc_mcu9t3v3__clkbuff_8"
-  - "gf180mcu_as_sc_mcu9t3v3__clkbuff_4"
+  - "sg13cmos5l_buf_8"
+  - "sg13cmos5l_buf_4"
+  - "sg13cmos5l_buf_2"
 
-DEFAULT_CORNER: nom_tt_025C_3v30
+DEFAULT_CORNER: nom_typ_1p20V_25C
 
 # Magic streamout: don't blackbox macros
 MAGIC_MACRO_STD_CELL_SOURCE: PDK
@@ -131,7 +92,6 @@ MAGIC_EXT_SHORT_RESISTOR: true
 
 # IGNORE_DISCONNECTED_MODULES:
 #     - manual_routing
-#     - gf180mcu_ocd_ip_sram__sram512x8m8wm1
 
 # Prevent porb_h mangling
 SYNTH_DIRECT_WIRE_BUFFERING: False
@@ -141,8 +101,8 @@ SYNTH_WRITE_NOATTR: False
 PL_TIME_DRIVEN: False
 
 # Clock
-CLOCK_NET: gpio_in[38]
-CLOCK_PORT: gpio_in[38]
+CLOCK_NET: SCK
+CLOCK_PORT: SCK
 CLOCK_PERIOD: 15
 
 # SDC
@@ -174,31 +134,31 @@ VDD_NETS:
 GND_NETS:
 - vssd
 
-FP_PDN_CFG: dir::pdn_cfg.tcl
+PDN_CORE_RING: false
 
-FP_PDN_VWIDTH: 2.0
-FP_PDN_HWIDTH: 5.0
-FP_PDN_VSPACING: 1.7
-FP_PDN_HSPACING: 1.7
-FP_PDN_VPITCH: 55
-FP_PDN_HPITCH: 70
+# FP_PDN_CFG: dir::pdn_cfg.tcl
 
-FP_PDN_CORE_RING: true
-FP_PDN_CORE_RING_VWIDTH: 8
-FP_PDN_CORE_RING_HWIDTH: 8
+# FP_PDN_VWIDTH: 2.0
+# FP_PDN_HWIDTH: 5.0
+# FP_PDN_VSPACING: 1.7
+# FP_PDN_HSPACING: 1.7
+# FP_PDN_VPITCH: 55
+# FP_PDN_HPITCH: 70
 
-FP_PDN_CORE_RING_VOFFSET: 2
-FP_PDN_CORE_RING_HOFFSET: 2
+# FP_PDN_CORE_RING: true
+# FP_PDN_CORE_RING_VWIDTH: 8
+# FP_PDN_CORE_RING_HWIDTH: 8
+
+# FP_PDN_CORE_RING_VOFFSET: 2
+# FP_PDN_CORE_RING_HOFFSET: 2
 
 # Floorplanning
 FP_SIZING: absolute
 
-# DIE_AREA: [ 350.00,  350.00, 3529.90, 4719.90 ]
-# CORE_AREA: [ 372.00,  372.00, 3507.90, 4697.90 ]
-DIE_AREA: [ 350.00,  350.00, 3529.90, 1719.90 ]
-CORE_AREA: [ 372.00,  372.00, 3507.90, 1697.90 ]
+DIE_AREA: [ 360.00,  300.00, 1700.00, 480.00 ]
+CORE_AREA: [ 360.00,  300.00, 1700.00, 480.00 ]
 
-FP_DEF_TEMPLATE: dir::../def/openframe_project_wrapper.def
+FP_DEF_TEMPLATE: dir::../def/housekeeping_top.def
 FP_TEMPLATE_MATCH_MODE: permissive
 #FP_TEMPLATE_COPY_POWER_PINS: True
 
@@ -226,22 +186,22 @@ PDN_OBSTRUCTIONS:
 # Power connections
 
 # Bottom
-- [Metal4, 26.45, 0, 100.66, 20]
-
-- [Metal4, 931.45, 0, 1005.66, 20]
-
-- [Metal4, 1611.45, 0, 1685.66, 20]
-
-- [Metal4, 2551.45, 0, 2625.66, 20]
+# - [Metal4, 26.45, 0, 100.66, 20]
+# 
+# - [Metal4, 931.45, 0, 1005.66, 20]
+#
+#- [Metal4, 1611.45, 0, 1685.66, 20]
+#
+#- [Metal4, 2551.45, 0, 2625.66, 20]
 
 # Top
-- [Metal4, 3085.65, 4750.65, 3147.9, 4770.65]
-
-- [Metal4, 2375.64, 4750.65, 2449.905, 4770.65]
-
-- [Metal4, 725.65, 4750.65, 799.85, 4770.65]
-
-- [Metal4, 27.65, 4750.65, 89.85, 4770.65]
+#- [Metal4, 3085.65, 4750.65, 3147.9, 4770.65]
+#
+#- [Metal4, 2375.64, 4750.65, 2449.905, 4770.65]
+#
+#- [Metal4, 725.65, 4750.65, 799.85, 4770.65]
+#
+#- [Metal4, 27.65, 4750.65, 89.85, 4770.65]
 
 ROUTING_OBSTRUCTIONS:
 ## SIO
@@ -255,52 +215,51 @@ ROUTING_OBSTRUCTIONS:
 ## Logo
 # - [Metal5, 2665, 120, 3070, 265]
 
-
 # Power connections
 
 # Bottom
-- [Metal3, 26.45, 0, 100.66, 20]
-- [Metal4, 26.45, 0, 100.66, 20]
-
-- [Metal3, 931.45, 0, 1005.66, 20]
-- [Metal4, 931.45, 0, 1005.66, 20]
-
-- [Metal3, 1611.45, 0, 1685.66, 20]
-- [Metal4, 1611.45, 0, 1685.66, 20]
-
-- [Metal3, 2551.45, 0, 2625.66, 20]
-- [Metal4, 2551.45, 0, 2625.66, 20]
-
+#- [Metal3, 26.45, 0, 100.66, 20]
+#- [Metal4, 26.45, 0, 100.66, 20]
+#
+#- [Metal3, 931.45, 0, 1005.66, 20]
+#- [Metal4, 931.45, 0, 1005.66, 20]
+#
+#- [Metal3, 1611.45, 0, 1685.66, 20]
+#- [Metal4, 1611.45, 0, 1685.66, 20]
+#
+#- [Metal3, 2551.45, 0, 2625.66, 20]
+#- [Metal4, 2551.45, 0, 2625.66, 20]
+#
 # Right
-- [Metal3, 3150.3, 584.8, 3170.3, 659]
-
-- [Metal3, 3150.3, 2184.8, 3170.3, 2259.01]
-
-- [Metal3, 3150.3, 3487.8, 3170.3, 3562]
-
-- [Metal3, 3150.3, 4527.8, 3170.3, 4602.01]
-
+#- [Metal3, 3150.3, 584.8, 3170.3, 659]
+#
+#- [Metal3, 3150.3, 2184.8, 3170.3, 2259.01]
+#
+#- [Metal3, 3150.3, 3487.8, 3170.3, 3562]
+#
+#- [Metal3, 3150.3, 4527.8, 3170.3, 4602.01]
+#
 # Top
-- [Metal3, 3085.65, 4750.65, 3147.9, 4770.65]
-- [Metal4, 3085.65, 4750.65, 3147.9, 4770.65]
-
-- [Metal3, 2375.64, 4750.65, 2449.905, 4770.65]
-- [Metal4, 2375.64, 4750.65, 2449.905, 4770.65]
-
-- [Metal3, 725.65, 4750.65, 799.85, 4770.65]
-- [Metal4, 725.65, 4750.65, 799.85, 4770.65]
-
-- [Metal3, 27.65, 4750.65, 89.85, 4770.65]
-- [Metal4, 27.65, 4750.65, 89.85, 4770.65]
-
+#- [Metal3, 3085.65, 4750.65, 3147.9, 4770.65]
+#- [Metal4, 3085.65, 4750.65, 3147.9, 4770.65]
+#
+#- [Metal3, 2375.64, 4750.65, 2449.905, 4770.65]
+#- [Metal4, 2375.64, 4750.65, 2449.905, 4770.65]
+#
+#- [Metal3, 725.65, 4750.65, 799.85, 4770.65]
+#- [Metal4, 725.65, 4750.65, 799.85, 4770.65]
+#
+#- [Metal3, 27.65, 4750.65, 89.85, 4770.65]
+#- [Metal4, 27.65, 4750.65, 89.85, 4770.65]
+#
 # Left
-- [Metal3, 0, 4537, 20, 4611.2]
-
-- [Metal3, 0, 3497, 20, 3571.2]
-
-- [Metal3, 0, 2199, 20, 2273.2]
-
-- [Metal3, 0, 589, 20, 663.2]
+#- [Metal3, 0, 4537, 20, 4611.2]
+#
+#- [Metal3, 0, 3497, 20, 3571.2]
+#
+#- [Metal3, 0, 2199, 20, 2273.2]
+#
+#- [Metal3, 0, 589, 20, 663.2]
 
 # Magic: Use GDS views (no DRC issues)
 MAGIC_DRC_USE_GDS: True

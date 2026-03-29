@@ -1,0 +1,16 @@
+magic
+tech ihp-sg13cmos5l
+timestamp 1774809141
+use openframe_project_wrapper  openframe_project_wrapper_0
+timestamp 1774809141
+transform 1 0 1610 0 1 1610
+box 27900 27900 179100 283100
+use sealring_complete  sealring_complete_0 sealring
+timestamp 1772318024
+transform 1 0 0 0 1 0
+box 0 0 210220 314220
+use sg13cmos5l_padframe  sg13cmos5l_padframe_0
+timestamp 1774809141
+transform 1 0 1610 0 1 1610
+box 0 0 207000 311000
+<< end >>
