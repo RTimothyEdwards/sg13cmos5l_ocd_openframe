@@ -1,7 +1,7 @@
 magic
 tech ihp-sg13cmos5l
 magscale 1 2
-timestamp 1774806711
+timestamp 1774816855
 << digisub >>
 rect 16834 4360 285244 39594
 << metal1 >>
@@ -1732,24 +1732,24 @@ transform 1 0 -54842 0 1 -55852
 box 71952 60000 340000 96000
 use power_stage  power_stage_0 ../dependencies/sg13cmos5l_ocd_ip__analog_switches/magic
 array 0 7 52000 0 0 -29802
-timestamp 1774796900
+timestamp 1774816855
 transform 0 -1 137954 -1 0 467709
 box -1044 -5856 23866 23946
 use power_stage  power_stage_1
 array 0 7 52000 0 0 -29802
-timestamp 1774796900
+timestamp 1774816855
 transform 0 1 163895 -1 0 467620
 box -1044 -5856 23866 23946
 use sg13cmos5l_ocd_ip__bandgap  sg13cmos5l_ocd_ip__bandgap_0 ../dependencies/sg13cmos5l_ocd_ip__biasgen/magic
-timestamp 1774803102
+timestamp 1774816855
 transform 1 0 173570 0 -1 253364
 box -10372 -34072 14205 -12673
 use sg13cmos5l_ocd_ip__biasgen1  sg13cmos5l_ocd_ip__biasgen1_0 ../dependencies/sg13cmos5l_ocd_ip__biasgen/magic
-timestamp 1774803102
+timestamp 1774816855
 transform 0 -1 154425 -1 0 314020
 box -154616 1023 232500 8211
 use sg13cmos5l_ocd_ip__voltgen  sg13cmos5l_ocd_ip__voltgen_2 ../dependencies/sg13cmos5l_ocd_ip__biasgen/magic
-timestamp 1774803102
+timestamp 1774816855
 transform 0 -1 120371 -1 0 288904
 box 1585 -13284 22396 264
 use via_3VEQ2X  via_3VEQ2X_0 paramcells

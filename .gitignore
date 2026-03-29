@@ -9,3 +9,5 @@
 librelane/runs
 magic/sg13cmos5l_io/
 magic/sg13cmos5l_stdcell/
+gds/openframe_project_wrapper.gds.gz
+validate/sg13cmos5l_caravel_openframe.lyrdb
