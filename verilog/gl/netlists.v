@@ -3,7 +3,9 @@
  * netlists.v
  *
  * Netlists for sg13cmos5l openframe project
+ *
  * This file includes all of the verilog modules for openframe
+ * for use in simulation (e.g., iverilog).
  *
  *------------------------------------------------------------------------
  */ 
@@ -36,7 +38,7 @@
 `include "user_id_programming.v"
 
 /* User project wrapper */
-`include "openfraem_project_wrapper.v"
+`include "openframe_project_wrapper.v"
 
 /* User project */
 `include "openframe_user_project.v"
@@ -45,4 +47,4 @@
 `include "sg13cmos5l_padframe.v"
 
 /* Top level cell */
-`include "sg13cmos5l_padframe.v"
+`include "sg13cmos5l_caravel_openframe.v"

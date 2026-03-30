@@ -83,7 +83,7 @@ module caravel_openframe (
 	//------------------------------------------------------------
 	// This value is uniquely defined for each user project.
 	//------------------------------------------------------------
-	parameter USER_PROJECT_ID = 32'h00000000;
+	parameter USER_PROJECT_ID = 32'h20260330;
 
 	// Project Control (pad-facing)
 	wire [`OPENFRAME_IO_PADS-1:0] gpio_ie;		// input enable

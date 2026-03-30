@@ -36,16 +36,16 @@ module constant_block (
 
     sg13cmos5l_tiehi const_one (
 `ifdef USE_POWER_PINS
-            .power(vdd),
-            .ground(vss),
+            .VDD(vdd),
+            .VSS(vss),
 `endif
             .L_HI(one_unbuf)
     );
 
     sg13cmos5l_tielo const_zero (
 `ifdef USE_POWER_PINS
-            .power(vdd),
-            .ground(vss),
+            .VDD(vdd),
+            .VSS(vss),
 `endif
             .L_LO(zero_unbuf)
     );
@@ -54,8 +54,8 @@ module constant_block (
 
     sg13cmos5l_buf_8 const_one_buf (
 `ifdef USE_POWER_PINS
-            .power(vdd),
-            .ground(vss),
+            .VDD(vdd),
+            .VSS(vss),
 `endif
             .A(one_unbuf),
             .X(one)
@@ -63,8 +63,8 @@ module constant_block (
 
     sg13cmos5l_buf_8 const_zero_buf (
 `ifdef USE_POWER_PINS
-            .power(vdd),
-            .ground(vss),
+            .VDD(vdd),
+            .VSS(vss),
 `endif
             .A(zero_unbuf),
             .X(zero)
@@ -73,10 +73,10 @@ module constant_block (
     /* For LVS purposes, enumerate the decap cells */
 
 `ifdef LVS
-    sg13cmos5l_decap_4 const_decap [1:0] (
+    sg13cmos5l_decap_4 const_decap [3:0] (
     `ifdef USE_POWER_PINS
-            .power(vdd),
-            .ground(vss)
+            .VDD(vdd),
+            .VSS(vss)
     `endif
     );
 `endif

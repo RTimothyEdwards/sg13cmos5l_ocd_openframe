@@ -83,7 +83,7 @@ import subprocess
 
 def usage():
     print("Usage:")
-    print("set_user_id.py [<user_id_value>] [<path_to_project>]")
+    print("set_user_id.py [<user_id_value>] [<path_to_project>] [-debug][-report]")
     print("")
     print("where:")
     print("    <user_id_value>   is a character string of eight hex digits, and")
@@ -91,6 +91,9 @@ def usage():
     print("")
     print("  If <user_id_value> is not given, then it must exist in the info.yaml file.")
     print("  If <path_to_project> is not given, then it is assumed to be the cwd.")
+    print("")
+    print("  -debug:  Output additional information while running.")
+    print("  -report: Find the existing value of the user ID and report it.")
     return 0
 
 if __name__ == '__main__':
@@ -188,7 +191,7 @@ if __name__ == '__main__':
             idrex = re.compile("parameter USER_PROJECT_ID = 32'h([0-9A-F]+);")
 
             # Check if USER_PROJECT_ID has a non-zero value in caravel.v
-            rtl_top_path = user_project_path + '/verilog/rtl/caravel_core.v'
+            rtl_top_path = user_project_path + '/verilog/gl/caravel_openframe.v'
             if os.path.isfile(rtl_top_path):
                 with open(rtl_top_path, 'r') as ifile:
                     vlines = ifile.read().splitlines()
@@ -286,7 +289,7 @@ if __name__ == '__main__':
         # Diagnostic
         if debugmode:
             print('Bit ' + str(i) + ':')
-            print('Via position ({0:3.2f}, {1:3.2f}) to ({2:3.2f}, {3:3.2f})'.format(xllum, yllum, xurum, yurum))
+            print('Via position ({0:d}, {1:d}) to ({2:d}, {3:d})'.format(xllint, yllint, xurint, yurint))
             print('Old string = "' + viaoldposdata + '"')
             print('New string = "' + vianewposdata + '"')
 
@@ -318,7 +321,7 @@ if __name__ == '__main__':
     print('Step 2:  Add user project ID parameter to source verilog.')
 
     changed = False
-    with open(vpath + '/rtl/caravel_openframe.v', 'r') as ifile:
+    with open(vpath + '/gl/caravel_openframe.v', 'r') as ifile:
         vlines = ifile.read().splitlines()
         outlines = []
         for line in vlines:
@@ -330,12 +333,12 @@ if __name__ == '__main__':
             outlines.append(oline)
 
     if changed:
-        with open(vpath + '/rtl/caravel_openframe.v', 'w') as ofile:
+        with open(vpath + '/gl/caravel_openframe.v', 'w') as ofile:
             for line in outlines:
                 print(line, file=ofile)
             print('Done!')
     else:
-        print('Error:  No substitutions done on verilog/rtl/caravel_openframe.v.')
+        print('Error:  No substitutions done on verilog/gl/caravel_openframe.v.')
         print('Ending process.')
         sys.exit(1)
 
@@ -352,8 +355,8 @@ if __name__ == '__main__':
                 oline = re.sub('alpha_[0-9A-F]', 'alpha_' + dchar, line)
                 # Add path reference if cell was not previously found in the file
                 if dchar not in wasseen:
-                    if 'gf180mcu_ocd_alpha_large' not in oline:
-                        oline += ' $PDKPATH/libs.ref/gf180mcu_ocd_alpha_large/mag'
+                    if 'hexdigits' not in oline:
+                        oline += ' hexdigits'
                 outlines.append(oline)
                 wasseen[dchar] = True
                 digit += 1

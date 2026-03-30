@@ -1,16 +1,20 @@
 ** sch_path: /home/tim/gits/sg13cmos5l_ocd_openframe/xschem/openframe_user_project.sch
-.subckt openframe_user_project gpio1_zero gpio1_ena spi_SDI_ena spi_SDI_zero gpio1_out spi_SDI_out spi_CSB_ena UART_Rx_zero
-+ UART_Rx_ena spi_CSB_zero vddio spi_CSB_out vssio UART_Rx_out vccd UART_Tx_zero spi_SCK_zero spi_SCK_ena UART_Tx_ena vssd UART_Tx_out
-+ spi_SCK_out ref_in vbg test_source_ibias voltgen_vout1 idac1_source idac1_sink idac2_source voltgen_vout2 idac2_sink resetb_in spi_SCK_in
-+ spi_SDO_out spi_SDI_in spi_CSB_in spi_SDO_ena mask_rev[31] mask_rev[30] mask_rev[29] mask_rev[28] mask_rev[27] mask_rev[26] mask_rev[25]
-+ mask_rev[24] mask_rev[23] mask_rev[22] mask_rev[21] mask_rev[20] mask_rev[19] mask_rev[18] mask_rev[17] mask_rev[16] mask_rev[15] mask_rev[14]
-+ mask_rev[13] mask_rev[12] mask_rev[11] mask_rev[10] mask_rev[9] mask_rev[8] mask_rev[7] mask_rev[6] mask_rev[5] mask_rev[4] mask_rev[3]
-+ mask_rev[2] mask_rev[1] mask_rev[0] spi_SDO_one spi_SDO_zero flash_io3_one flash_io3_zero
+.subckt openframe_user_project vddio vssio vccd vssd gpio0_zero gpio0_ena gpio0_out gpio1_zero gpio1_ena gpio1_out UART_Rx_zero
++ UART_Rx_ena vbg ref_in UART_Rx_out UART_Tx_ena UART_Tx_zero UART_Tx_out spi_SDI_zero spi_SDI_ena spi_SDI_out test_source_ibias spi_CSB_ena
++ spi_CSB_zero idac1_source spi_CSB_out voltgen_vout1 idac1_sink spi_SCK_zero spi_SCK_ena idac2_source voltgen_vout2 idac2_sink spi_SCK_out
++ test_source flash_csb_zero flash_csb_ena flash_csb_out flash_clk_zero flash_clk_ena flash_clk_out flash_io0_zero flash_io0_ena flash_io0_out
++ resetb_in spi_SCK_in spi_SDO_out spi_SDI_in flash_io1_zero flash_io1_ena spi_CSB_in spi_SDO_ena flash_io1_out mask_rev[31] mask_rev[30]
++ mask_rev[29] mask_rev[28] mask_rev[27] mask_rev[26] mask_rev[25] mask_rev[24] mask_rev[23] mask_rev[22] mask_rev[21] mask_rev[20] mask_rev[19]
++ mask_rev[18] mask_rev[17] mask_rev[16] mask_rev[15] mask_rev[14] mask_rev[13] mask_rev[12] mask_rev[11] mask_rev[10] mask_rev[9] mask_rev[8]
++ mask_rev[7] mask_rev[6] mask_rev[5] mask_rev[4] mask_rev[3] mask_rev[2] mask_rev[1] mask_rev[0] flash_io2_zero flash_io2_ena flash_io2_out
++ flash_io3_zero flash_io3_ena flash_io3_out spi_SDO_one spi_SDO_zero flash_io3_one
 *.PININFO vddio:B vssio:B vccd:B vssd:B resetb_in:I mask_rev[31:0]:I spi_SDO_out:O spi_SDO_ena:O spi_SDI_ena:O spi_SDI_out:O
 *+ spi_SDI_zero:I spi_SDI_in:I spi_CSB_ena:O spi_CSB_out:O spi_CSB_zero:I spi_CSB_in:I spi_SCK_ena:O spi_SCK_out:O spi_SCK_zero:I spi_SCK_in:I
 *+ vbg:O ref_in:I idac1_sink:I idac2_sink:I idac1_source:O idac2_source:O test_source_ibias:O voltgen_vout1:O voltgen_vout2:O
-*+ spi_SDO_one:I spi_SDO_zero:I flash_io3_one:I flash_io3_zero:I gpio1_ena:O gpio1_out:O gpio1_zero:I UART_Rx_ena:O UART_Rx_out:O UART_Rx_zero:I
-*+ UART_Tx_ena:O UART_Tx_out:O UART_Tx_zero:I
+*+ spi_SDO_one:I spi_SDO_zero:I flash_io3_one:I gpio1_ena:O gpio1_out:O gpio1_zero:I UART_Rx_ena:O UART_Rx_out:O UART_Rx_zero:I UART_Tx_ena:O
+*+ UART_Tx_out:O UART_Tx_zero:I flash_csb_ena:O flash_csb_out:O flash_csb_zero:I flash_clk_ena:O flash_clk_out:O flash_clk_zero:I flash_io0_ena:O
+*+ flash_io0_out:O flash_io0_zero:I flash_io1_ena:O flash_io1_out:O flash_io1_zero:I flash_io2_ena:O flash_io2_out:O flash_io2_zero:I
+*+ flash_io3_ena:O flash_io3_out:O flash_io3_zero:I gpio0_ena:O gpio0_out:O gpio0_zero:I test_source:O
 x1 control[80] vddio vssio vssd vccd vdda7 power_stage
 x2 control[79] vddio vssio vssd vccd vdda6 power_stage
 x3 control[78] vddio vssio vssd vccd vdda5 power_stage
@@ -25,19 +29,19 @@ x11 control[24] vddio vssio vssd vccd vdda13 power_stage
 x12 control[25] vddio vssio vssd vccd vdda14 power_stage
 x13 control[26] vddio vssio vssd vccd vdda15 power_stage
 x14 control[27] vddio vssio vssd vccd vdda16 power_stage
-x15 vdda12 vbg vssio net2 control[29] control[30] control[31] control[32] control[33] control[34] control[35] control[36]
-+ control[37] control[38] control[39] control[40] control[41] control[42] control[43] control[44] vssd vccd control[28] net1
+x15 vdda12 vbg vssio net1 control[29] control[30] control[31] control[32] control[33] control[34] control[35] control[36]
++ control[37] control[38] control[39] control[40] control[41] control[42] control[43] control[44] vssd vccd control[28] idac1_sink
 + sg13cmos5l_ocd_ip__bandgap
-x16 control[88] vddio vssio ref_in vccd vbg control[87] vssd net1 control[71] control[72] control[73] control[82] control[83]
-+ control[107] control[106] control[105] control[104] control[103] control[58] control[59] control[60] control[61] control[62] net2 control[45]
-+ control[46] control[47] control[48] control[49] control[121] control[120] control[119] control[118] control[117] net5 control[94] control[93]
-+ control[92] control[91] control[90] test_source_ibias control[63] control[64] control[65] control[66] control[67] control[68] control[69]
-+ control[70] net3 net4 idac1_source idac2_source control[102] control[101] control[100] control[99] control[98] control[97] control[96]
-+ control[95] control[50] control[51] control[52] control[53] control[54] control[55] control[56] control[57] control[115] control[114]
-+ control[113] control[112] control[111] control[110] control[109] control[108] idac1_sink idac2_sink control[86] control[85]
+x16 control[88] vddio vssio ref_in vccd vbg control[87] vssd test_source control[71] control[72] control[73] control[82]
++ control[83] control[107] control[106] control[105] control[104] control[103] control[58] control[59] control[60] control[61] control[62] net1
++ control[45] control[46] control[47] control[48] control[49] control[121] control[120] control[119] control[118] control[117] net4 control[94]
++ control[93] control[92] control[91] control[90] test_source_ibias control[63] control[64] control[65] control[66] control[67] control[68]
++ control[69] control[70] net2 net3 idac1_source idac2_source control[102] control[101] control[100] control[99] control[98] control[97]
++ control[96] control[95] control[50] control[51] control[52] control[53] control[54] control[55] control[56] control[57] control[115]
++ control[114] control[113] control[112] control[111] control[110] control[109] control[108] idac1_sink idac2_sink control[86] control[85]
 + sg13cmos5l_ocd_ip__biasgen1
-x17 vccd vssd vdda5 control[116] control[122] control[123] vbg vssio net5 voltgen_vout2 net3 control[124] voltgen_vout1
-+ control[126] control[125] net4 control[127] sg13cmos5l_ocd_ip__voltgen
+x17 vccd vssd vdda5 control[116] control[122] control[123] vbg vssio net4 voltgen_vout2 net2 control[124] voltgen_vout1
++ control[126] control[125] net3 control[127] sg13cmos5l_ocd_ip__voltgen
 x18 spi_SDI_in mask_rev[31] mask_rev[30] mask_rev[29] mask_rev[28] mask_rev[27] mask_rev[26] mask_rev[25] mask_rev[24]
 + mask_rev[23] mask_rev[22] mask_rev[21] mask_rev[20] mask_rev[19] mask_rev[18] mask_rev[17] mask_rev[16] mask_rev[15] mask_rev[14] mask_rev[13]
 + mask_rev[12] mask_rev[11] mask_rev[10] mask_rev[9] mask_rev[8] mask_rev[7] mask_rev[6] mask_rev[5] mask_rev[4] mask_rev[3] mask_rev[2]
@@ -54,7 +58,7 @@ x18 spi_SDI_in mask_rev[31] mask_rev[30] mask_rev[29] mask_rev[28] mask_rev[27] 
 + spi_SDO_one spi_SDO_one spi_SDO_one spi_SDO_one spi_SDO_one spi_SDO_one spi_SDO_one spi_SDO_one spi_SDO_one spi_SDO_one spi_SDO_one
 + spi_SDO_one spi_SDO_one spi_SDO_one spi_SDO_one spi_SDO_one spi_SDO_one spi_SDO_one spi_SDO_one spi_SDO_one spi_SDO_one spi_SDO_one
 + spi_SDO_one spi_SDO_one spi_SDO_one spi_SDO_one spi_SDO_one spi_SDO_one spi_SDO_one spi_SDO_one spi_SDO_one spi_SDO_out spi_SDO_ena vccd vssd
-+ resetb_in net6 spi_SCK_in control[127] control[126] control[125] control[124] control[123] control[122] control[121] control[120]
++ resetb_in net5 spi_SCK_in control[127] control[126] control[125] control[124] control[123] control[122] control[121] control[120]
 + control[119] control[118] control[117] control[116] control[115] control[114] control[113] control[112] control[111] control[110] control[109]
 + control[108] control[107] control[106] control[105] control[104] control[103] control[102] control[101] control[100] control[99] control[98]
 + control[97] control[96] control[95] control[94] control[93] control[92] control[91] control[90] control[89] control[88] control[87]
@@ -66,7 +70,7 @@ x18 spi_SDI_in mask_rev[31] mask_rev[30] mask_rev[29] mask_rev[28] mask_rev[27] 
 + control[31] control[30] control[29] control[28] control[27] control[26] control[25] control[24] control[23] control[22] control[21]
 + control[20] control[19] control[18] control[17] control[16] control[15] control[14] control[13] control[12] control[11] control[10]
 + control[9] control[8] control[7] control[6] control[5] control[4] control[3] control[2] control[1] control[0] housekeeping_top
-* noconn #net6
+* noconn #net5
 * noconn control[19:0]
 * noconn control[89]
 * noconn control[84]
@@ -84,6 +88,20 @@ R11 spi_SCK_ena spi_SCK_zero 0.0293 m=1
 R12 spi_SCK_out spi_SCK_zero 0.0293 m=1
 x19 control[81] vddio vssio vssd vccd vdda8 power_stage
 x20 control[20] vddio vssio vssd vccd vdda9 power_stage
+R13 gpio0_ena gpio0_zero 0.018 m=1
+R14 gpio0_out gpio0_zero 0.018 m=1
+R15 flash_csb_ena flash_csb_zero 0.018 m=1
+R16 flash_csb_out flash_csb_zero 0.018 m=1
+R17 flash_clk_ena flash_clk_zero 0.018 m=1
+R18 flash_clk_out flash_clk_zero 0.018 m=1
+R19 flash_io0_ena flash_io0_zero 0.018 m=1
+R20 flash_io0_out flash_io0_zero 0.018 m=1
+R21 flash_io1_ena flash_io1_zero 0.018 m=1
+R22 flash_io1_out flash_io1_zero 0.018 m=1
+R23 flash_io2_ena flash_io2_zero 0.0293 m=1
+R24 flash_io2_out flash_io2_zero 0.0293 m=1
+R25 flash_io3_ena flash_io3_zero 0.0293 m=1
+R26 flash_io3_out flash_io3_zero 0.0293 m=1
 .ends
 
 * expanding   symbol:  power_stage.sym # of pins=6
@@ -1375,25 +1393,25 @@ XR23 j k vss rhigh w=0.69u l=20u m=1 b=0
 * expanding   symbol:  bg_trim.sym # of pins=4
 ** sym_path: /home/tim/gits/sg13cmos5l_ocd_openframe/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/bg_trim.sym
 ** sch_path: /home/tim/gits/sg13cmos5l_ocd_openframe/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/bg_trim.sch
-.subckt bg_trim top bot ctl[15] ctl[14] ctl[13] ctl[12] ctl[11] ctl[10] ctl[9] ctl[8] ctl[7] ctl[6] ctl[5] ctl[4] ctl[3] ctl[2]
-+ ctl[1] ctl[0] vss
-*.PININFO vss:B ctl[15:0]:I bot:B top:B
-XM0 net1 ctl[0] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
-XM1 net2 ctl[1] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
-XM2 net3 ctl[2] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
-XM3 net4 ctl[3] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
-XM4 net5 ctl[4] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
-XM5 net6 ctl[5] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
-XM6 net7 ctl[6] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
-XM7 net8 ctl[7] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
-XM12 net9 ctl[12] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
-XM13 net11 ctl[13] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
-XM14 net12 ctl[14] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
-XM15 top ctl[15] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
-XM8 net13 ctl[8] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
-XM9 net14 ctl[9] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
-XM10 net15 ctl[10] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
-XM11 net10 ctl[11] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
+.subckt bg_trim top bot ctrl[15] ctrl[14] ctrl[13] ctrl[12] ctrl[11] ctrl[10] ctrl[9] ctrl[8] ctrl[7] ctrl[6] ctrl[5] ctrl[4]
++ ctrl[3] ctrl[2] ctrl[1] ctrl[0] vss
+*.PININFO vss:B ctrl[15:0]:I bot:B top:B
+XM0 net1 ctrl[0] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
+XM1 net2 ctrl[1] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
+XM2 net3 ctrl[2] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
+XM3 net4 ctrl[3] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
+XM4 net5 ctrl[4] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
+XM5 net6 ctrl[5] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
+XM6 net7 ctrl[6] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
+XM7 net8 ctrl[7] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
+XM12 net9 ctrl[12] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
+XM13 net11 ctrl[13] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
+XM14 net12 ctrl[14] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
+XM15 top ctrl[15] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
+XM8 net13 ctrl[8] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
+XM9 net14 ctrl[9] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
+XM10 net15 ctrl[10] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
+XM11 net10 ctrl[11] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
 XR15 top net12 vss rhigh w=1.41u l=3.4u m=1 b=0
 XR1 net2 net1 vss rhigh w=1.41u l=3.4u m=1 b=0
 XR16 net1 bot vss rhigh w=1.41u l=3.4u m=1 b=0

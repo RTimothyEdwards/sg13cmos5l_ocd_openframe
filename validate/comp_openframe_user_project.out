@@ -270,26 +270,26 @@ Subcircuit pins:
 Circuit 1: bg_trim                                                           |Circuit 2: bg_trim                                                           
 -----------------------------------------------------------------------------|-----------------------------------------------------------------------------
 top                                                                          |top                                                                          
-ctrl[15]                                                                     |ctl[15] **Mismatch**                                                         
-ctrl[14]                                                                     |ctl[14] **Mismatch**                                                         
-ctrl[1]                                                                      |ctl[1] **Mismatch**                                                          
-ctrl[13]                                                                     |ctl[13] **Mismatch**                                                         
-ctrl[12]                                                                     |ctl[12] **Mismatch**                                                         
-ctrl[3]                                                                      |ctl[3] **Mismatch**                                                          
-ctrl[10]                                                                     |ctl[10] **Mismatch**                                                         
-ctrl[5]                                                                      |ctl[5] **Mismatch**                                                          
-ctrl[8]                                                                      |ctl[8] **Mismatch**                                                          
-ctrl[7]                                                                      |ctl[7] **Mismatch**                                                          
-ctrl[6]                                                                      |ctl[6] **Mismatch**                                                          
-ctrl[9]                                                                      |ctl[9] **Mismatch**                                                          
-ctrl[4]                                                                      |ctl[4] **Mismatch**                                                          
-ctrl[11]                                                                     |ctl[11] **Mismatch**                                                         
-ctrl[2]                                                                      |ctl[2] **Mismatch**                                                          
-ctrl[0]                                                                      |ctl[0] **Mismatch**                                                          
+ctrl[15]                                                                     |ctrl[15]                                                                     
+ctrl[14]                                                                     |ctrl[14]                                                                     
+ctrl[1]                                                                      |ctrl[1]                                                                      
+ctrl[13]                                                                     |ctrl[13]                                                                     
+ctrl[12]                                                                     |ctrl[12]                                                                     
+ctrl[3]                                                                      |ctrl[3]                                                                      
+ctrl[10]                                                                     |ctrl[10]                                                                     
+ctrl[5]                                                                      |ctrl[5]                                                                      
+ctrl[8]                                                                      |ctrl[8]                                                                      
+ctrl[7]                                                                      |ctrl[7]                                                                      
+ctrl[6]                                                                      |ctrl[6]                                                                      
+ctrl[9]                                                                      |ctrl[9]                                                                      
+ctrl[4]                                                                      |ctrl[4]                                                                      
+ctrl[11]                                                                     |ctrl[11]                                                                     
+ctrl[2]                                                                      |ctrl[2]                                                                      
+ctrl[0]                                                                      |ctrl[0]                                                                      
 bot                                                                          |bot                                                                          
 vss                                                                          |vss                                                                          
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-Cell pin lists for bg_trim and bg_trim altered to match.
+Cell pin lists are equivalent.
 Device classes bg_trim and bg_trim are equivalent.
 
 Subcircuit summary:
@@ -876,36 +876,32 @@ Circuit 1: bias_generator_fe                                                 |Ci
 ref_sel_coarse                                                               |ref_sel_coarse                                                               
 ref_sel_vbg                                                                  |ref_sel_vbg                                                                  
 pcasc                                                                        |pcasc                                                                        
-avdd                                                                         |avdd                                                                         
 ref_in                                                                       |ref_in                                                                       
 vbg                                                                          |vbg                                                                          
 pbias                                                                        |pbias                                                                        
+avdd                                                                         |avdd                                                                         
 src_test0                                                                    |src_test0                                                                    
 snk_test0                                                                    |snk_test0                                                                    
 ena_snk_test0                                                                |ena_snk_test0                                                                
 ena_src_test0                                                                |ena_src_test0                                                                
 ena                                                                          |ena                                                                          
 ref_sel_fine                                                                 |ref_sel_fine                                                                 
-nbias                                                                        |nbias                                                                        
-x13[9]/shld2                                                                 |shld2 **Mismatch**                                                           
-sub                                                                          |avss **Mismatch**                                                            
 ncasc                                                                        |ncasc                                                                        
 dvdd                                                                         |dvdd                                                                         
 dvss                                                                         |dvss                                                                         
+nbias                                                                        |nbias                                                                        
+x13[9]/shld2                                                                 |shld2 **Mismatch**                                                           
+sub                                                                          |avss **Mismatch**                                                            
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Cell pin lists for bias_generator_fe and bias_generator_fe altered to match.
 Device classes bias_generator_fe and bias_generator_fe are equivalent.
 
 Cell bias_generator_be1n (0) disconnected node: avdd
 Cell bias_generator_be1n (0) disconnected node: avss
-Cell bias_generator_be1n (0) disconnected node: bias_nstack_7[127]/a_1030_2157#
-Cell bias_generator_be1n (0) disconnected node: bias_nstack_6/a_1030_2157#
 Class bias_generator_be1n (0):  Merged 7 parallel devices.
 Class bias_generator_be1n (1):  Merged 7 parallel devices.
 Cell bias_generator_be1n (0) disconnected node: avdd
 Cell bias_generator_be1n (0) disconnected node: avss
-Cell bias_generator_be1n (0) disconnected node: bias_nstack_7[127]/a_1030_2157#
-Cell bias_generator_be1n (0) disconnected node: bias_nstack_6/a_1030_2157#
 Subcircuit summary:
 Circuit 1: bias_generator_be1n                                               |Circuit 2: bias_generator_be1n                                               
 -----------------------------------------------------------------------------|-----------------------------------------------------------------------------
@@ -944,8 +940,6 @@ bias_nstack_6/shld2                                                          |sh
 bias_nstack_6/shld3                                                          |shld3 **Mismatch**                                                           
 avdd                                                                         |(no matching pin)                                                            
 avss                                                                         |(no matching pin)                                                            
-bias_nstack_7[127]/a_1030_2157#                                              |(no matching pin)                                                            
-bias_nstack_6/a_1030_2157#                                                   |(no matching pin)                                                            
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Cell pin lists for bias_generator_be1n and bias_generator_be1n altered to match.
 Device classes bias_generator_be1n and bias_generator_be1n are equivalent.
@@ -2043,8 +2037,8 @@ Netlists match with 2 symmetries.
 Subcircuit pins:
 Circuit 1: sg13cmos5l_ocd_ip__biasgen1                                       |Circuit 2: sg13cmos5l_ocd_ip__biasgen1                                       
 -----------------------------------------------------------------------------|-----------------------------------------------------------------------------
-avdd                                                                         |avdd                                                                         
 dvdd                                                                         |dvdd                                                                         
+avdd                                                                         |avdd                                                                         
 dvss                                                                         |dvss                                                                         
 ena                                                                          |ena                                                                          
 vbg                                                                          |vbg                                                                          
@@ -3072,8 +3066,6 @@ vssd                                                                         |vs
 Cell pin lists are equivalent.
 Device classes housekeeping_top and housekeeping_top are equivalent.
 
-Cell openframe_user_project (0) disconnected node: vddio
-Cell openframe_user_project (0) disconnected node: vddio_uq0
 Subcircuit summary:
 Circuit 1: openframe_user_project                                            |Circuit 2: openframe_user_project                                            
 -----------------------------------------------------------------------------|-----------------------------------------------------------------------------
@@ -3082,13 +3074,13 @@ sg13cmos5l_ocd_ip__voltgen (1)                                               |sg
 power_stage (16)                                                             |power_stage (16)                                                             
 sg13cmos5l_ocd_ip__biasgen1 (1)                                              |sg13cmos5l_ocd_ip__biasgen1 (1)                                              
 housekeeping_top (1)                                                         |housekeeping_top (1)                                                         
-r (12)                                                                       |r (12)                                                                       
-Number of devices: 32                                                        |Number of devices: 32                                                        
-Number of nets: 223                                                          |Number of nets: 223                                                          
+r (26)                                                                       |r (26)                                                                       
+Number of devices: 46                                                        |Number of devices: 46                                                        
+Number of nets: 243                                                          |Number of nets: 243                                                          
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
-Netlists match uniquely with port errors.
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: openframe_user_project                                            |Circuit 2: openframe_user_project                                            
@@ -3097,12 +3089,12 @@ flash_io3_zero                                                               |fl
 flash_io3_one                                                                |flash_io3_one                                                                
 spi_SDO_zero                                                                 |spi_SDO_zero                                                                 
 spi_SDO_one                                                                  |spi_SDO_one                                                                  
-vddio_uq3                                                                    |vddio **Mismatch**                                                           
+vddio                                                                        |vddio                                                                        
 ref_in                                                                       |ref_in                                                                       
+test_source                                                                  |test_source                                                                  
 test_source_ibias                                                            |test_source_ibias                                                            
 idac1_source                                                                 |idac1_source                                                                 
 idac2_source                                                                 |idac2_source                                                                 
-idac1_sink                                                                   |idac1_sink                                                                   
 idac2_sink                                                                   |idac2_sink                                                                   
 voltgen_vout2                                                                |voltgen_vout2                                                                
 voltgen_vout1                                                                |voltgen_vout1                                                                
@@ -3144,32 +3136,52 @@ spi_SDO_out                                                                  |sp
 spi_SDO_ena                                                                  |spi_SDO_ena                                                                  
 resetb_in                                                                    |resetb_in                                                                    
 spi_SCK_in                                                                   |spi_SCK_in                                                                   
-gpio1_ena                                                                    |gpio1_ena                                                                    
-gpio1_out                                                                    |gpio1_out                                                                    
-UART_Rx_ena                                                                  |UART_Rx_ena                                                                  
-UART_Rx_out                                                                  |UART_Rx_out                                                                  
+flash_io0_ena                                                                |flash_io0_ena                                                                
+gpio0_ena                                                                    |gpio0_ena                                                                    
+flash_clk_out                                                                |flash_clk_out                                                                
+flash_csb_ena                                                                |flash_csb_ena                                                                
+flash_clk_ena                                                                |flash_clk_ena                                                                
+flash_io0_out                                                                |flash_io0_out                                                                
+flash_io1_ena                                                                |flash_io1_ena                                                                
+gpio0_out                                                                    |gpio0_out                                                                    
+flash_csb_out                                                                |flash_csb_out                                                                
+flash_io1_out                                                                |flash_io1_out                                                                
 UART_Tx_ena                                                                  |UART_Tx_ena                                                                  
+flash_io2_out                                                                |flash_io2_out                                                                
 UART_Tx_out                                                                  |UART_Tx_out                                                                  
-spi_SDI_ena                                                                  |spi_SDI_ena                                                                  
-spi_SDI_out                                                                  |spi_SDI_out                                                                  
-spi_CSB_ena                                                                  |spi_CSB_ena                                                                  
-spi_CSB_out                                                                  |spi_CSB_out                                                                  
-spi_SCK_ena                                                                  |spi_SCK_ena                                                                  
 spi_SCK_out                                                                  |spi_SCK_out                                                                  
-vssio                                                                        |vssio                                                                        
+spi_SCK_ena                                                                  |spi_SCK_ena                                                                  
+UART_Rx_out                                                                  |UART_Rx_out                                                                  
+spi_SDI_out                                                                  |spi_SDI_out                                                                  
+UART_Rx_ena                                                                  |UART_Rx_ena                                                                  
+spi_SDI_ena                                                                  |spi_SDI_ena                                                                  
+spi_CSB_out                                                                  |spi_CSB_out                                                                  
+gpio1_out                                                                    |gpio1_out                                                                    
+gpio1_ena                                                                    |gpio1_ena                                                                    
+flash_io2_ena                                                                |flash_io2_ena                                                                
+spi_CSB_ena                                                                  |spi_CSB_ena                                                                  
+flash_io3_ena                                                                |flash_io3_ena                                                                
+flash_io3_out                                                                |flash_io3_out                                                                
 vbg                                                                          |vbg                                                                          
+vssio                                                                        |vssio                                                                        
 vssd                                                                         |vssd                                                                         
 vccd                                                                         |vccd                                                                         
-gpio1_zero                                                                   |gpio1_zero                                                                   
-UART_Rx_zero                                                                 |UART_Rx_zero                                                                 
+idac1_sink                                                                   |idac1_sink                                                                   
+flash_clk_zero                                                               |flash_clk_zero                                                               
+flash_io0_zero                                                               |flash_io0_zero                                                               
+gpio0_zero                                                                   |gpio0_zero                                                                   
+flash_csb_zero                                                               |flash_csb_zero                                                               
+flash_io1_zero                                                               |flash_io1_zero                                                               
 UART_Tx_zero                                                                 |UART_Tx_zero                                                                 
-spi_SDI_zero                                                                 |spi_SDI_zero                                                                 
-spi_CSB_zero                                                                 |spi_CSB_zero                                                                 
 spi_SCK_zero                                                                 |spi_SCK_zero                                                                 
-vddio                                                                        |(no matching pin)                                                            
-vddio_uq0                                                                    |(no matching pin)                                                            
+UART_Rx_zero                                                                 |UART_Rx_zero                                                                 
+spi_SDI_zero                                                                 |spi_SDI_zero                                                                 
+gpio1_zero                                                                   |gpio1_zero                                                                   
+flash_io2_zero                                                               |flash_io2_zero                                                               
+spi_CSB_zero                                                                 |spi_CSB_zero                                                                 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-Cell pin lists for openframe_user_project and openframe_user_project altered to match.
+Cell pin lists are equivalent.
 Device classes openframe_user_project and openframe_user_project are equivalent.
 
-Final result: Top level cell failed pin matching.
+Final result: Circuits match uniquely.
+.

@@ -10,9 +10,15 @@ units microns
 addpath sg13cmos5l_io
 addpath paramcells
 
-# Ensure that the layout does not already exist.
+# Ensure that the padframe layout does not already exist.
 if {[file exists sg13cmos5l_padframe.mag]} {
     puts stderr "Padframe exists!  Delete before rebuilding!"
+    quit -noprompt
+}
+
+# Ensure that the project wrapper layout does not already exist.
+if {[file exists openframe_project_wrapper.mag]} {
+    puts stderr "Project wrapper exists!  Delete before rebuilding!"
     quit -noprompt
 }
 
@@ -139,8 +145,8 @@ proc label_left_signal {pad_name pin_name pin_text} {
     box move e [box width]
     box move w 1
     box width 2
-    box grow e 0.1
-    box grow w 0.1
+    box grow n 0.1
+    box grow s 0.1
     paint m3
     label $pin_text FreeSans 0.3 0 0 0 c m3
     port make
@@ -150,13 +156,8 @@ proc label_left_signal {pad_name pin_name pin_text} {
 proc label_left_analog {pad_name pin_name pin_text} {
     goto ${pad_name}/${pin_name}
     box move e [box width]
-    box width 0.1
+    box width 1.1
     paint m3
-    box move e 0.1
-    paint rm3
-    box move e 0.1
-    paint m3
-    box move e 0.1
     box width 0.8 
     paint m3
     label $pin_text FreeSans 0.3 90 0 0 c m3
@@ -166,13 +167,8 @@ proc label_left_analog {pad_name pin_name pin_text} {
 # Label an analog pad signal on the right
 proc label_right_analog {pad_name pin_name pin_text} {
     goto ${pad_name}/${pin_name}
-    box width 0.1
-    box move w 0.1
-    paint m3
-    box move w 0.1
-    paint rm3
-    box move w 0.9
-    box width 0.9
+    box width 1.1
+    box move w 1.1
     paint m3
     box width 0.8
     label $pin_text FreeSans 0.3 90 0 0 c m3
@@ -182,13 +178,8 @@ proc label_right_analog {pad_name pin_name pin_text} {
 # Label an analog pad signal on the top
 proc label_top_analog {pad_name pin_name pin_text} {
     goto ${pad_name}/${pin_name}
-    box height 0.1
-    box move s 0.1
-    paint m2
-    box move s 0.1
-    paint rm2
-    box move s 0.9
-    box height 0.9
+    box height 1.1
+    box move s 1.1
     paint m2
     box height 0.8
     label $pin_text FreeSans 0.3 0 0 0 c m2
@@ -711,7 +702,7 @@ label_bottom_signal  project_id	mask_rev\[31\]  mask_rev\[31\]
 
 select cell pad_vccd_0
 box values {*}[instance list abutment]
-box grow s -156
+box grow s -141
 box grow n 3
 fill n m5
 box move n [box height]
@@ -719,6 +710,7 @@ box move s 4
 box height 4
 box grow w -8
 box grow e -8
+paint m5
 label vccd FreeSans 4 0 0 0 c m5
 port make
 
@@ -769,14 +761,15 @@ port make
 
 select cell pad_vddio_0
 box values {*}[instance list abutment]
-box grow s -117
-box grow w -10
-box grow e -5
+box grow s -93.6
+box grow w -7
+box grow e -7
 box grow n 3
 fill n m5
 box move n [box height]
 box move s 4
 box height 4
+paint m5
 label vddio FreeSans 4 0 0 0 c m5
 port make
 
@@ -810,34 +803,37 @@ port make
 
 select cell pad_vddio_1
 box values {*}[instance list abutment]
-box grow e -117
-box grow s -10
-box grow n -10
+box grow e -93.6
+box grow s -7
+box grow n -7
 box grow w 3
 fill w m5
 box width 4
+paint m5
 label vddio FreeSans 4 270 0 0 c m5
 port make
 
 select cell pad_vddio_2
 box values {*}[instance list abutment]
-box grow e -117
-box grow s -10
-box grow n -10
+box grow e -93.6
+box grow s -7
+box grow n -7
 box grow w 3
 fill w m5
 box width 4
+paint m5
 label vddio FreeSans 4 270 0 0 c m5
 port make
 
 select cell pad_vccd_1
 box values {*}[instance list abutment]
-box grow e -156
+box grow e -141
 box grow w 3
 fill w m5
 box width 4
 box grow n -8
 box grow s -8
+paint m5
 label vccd FreeSans 4 270 0 0 c m5
 port make
 
@@ -873,7 +869,7 @@ port make
 
 select cell pad_vccd_2
 box values {*}[instance list abutment]
-box grow w -156
+box grow w -141
 box grow e 3
 fill e m5
 box move e [box width]
@@ -881,19 +877,21 @@ box move w 4
 box width 4
 box grow n -8
 box grow s -8
+paint m5
 label vccd FreeSans 4 270 0 0 c m5
 port make
 
 select cell pad_vddio_3
 box values {*}[instance list abutment]
-box grow w -117
-box grow s -10
-box grow n -10
+box grow w -93.6
+box grow s -7
+box grow n -7
 box grow e 3
 fill e m5
 box move e [box width]
 box move w 4
 box width 4
+paint m5
 label vddio FreeSans 4 270 0 0 c m5
 port make
 
@@ -914,14 +912,15 @@ port make
 
 select cell pad_vddio_4
 box values {*}[instance list abutment]
-box grow w -117
-box grow s -10
-box grow n -10
+box grow w -93.6
+box grow s -7
+box grow n -7
 box grow e 3
 fill e m5
 box move e [box width]
 box move w 4
 box width 4
+paint m5
 label vddio FreeSans 4 270 0 0 c m5
 port make
 
@@ -942,19 +941,46 @@ port make
 
 select cell pad_vddio_5
 box values {*}[instance list abutment]
-box grow w -117
-box grow s -10
-box grow n -10
+box grow w -93.6
+box grow s -7
+box grow n -7
 box grow e 3
 fill e m5
 box move e [box width]
 box move w 4
 box width 4
+paint m5
 label vddio FreeSans 4 270 0 0 c m5
 port make
 
 writeall force sg13cmos5l_padframe
 writeall force bondpad_LX3CBX
+
+# Create a cell containing just the pad labels which can be copied (flattened)
+# into the final top level cell
+
+select top cell
+unexpand
+set topllx [lindex $topbox 0]
+set toplly [lindex $topbox 1]
+set topurx [lindex $topbox 2]
+set topury [lindex $topbox 3]
+# bottom row
+box values $topllx $toplly $topurx 100
+select area m5
+# left row
+box values $topllx $toplly 100 $topury
+select more area m5
+# top row
+box values $topllx $topury $topurx $topury
+box grow s 100
+select more area m5
+# right row
+box values $topurx $toplly $topurx $topury
+box grow w 100
+select more area m5
+select save padframe_pins
+
 
 # Create the user project wrapper
 #
@@ -970,7 +996,7 @@ writeall force bondpad_LX3CBX
 select top cell
 expand
 box grow c -279
-select area m2,m3,via,via2,rm2,rm3,m5
+select area m2,m3,via,via2,m5
 select less area labels
 unexpand
 select more area labels
@@ -985,26 +1011,26 @@ box grow c -0.5
 erase comment
 select top cell
 box height 2
-erase m3,rm3
+erase m3
 paint obsm1,obsm3
 select top cell
 box width 2
-erase m2,rm2
+erase m2
 paint obsm1,obsm2
 select top cell
 box move e [box width]
 box move w 2
 box width 2
-erase m2,rm2
+erase m2
 paint obsm1,obsm2
 select top cell
 box move n [box height]
 box move s 2
 box height 2
-erase m3,rm3
+erase m3
 paint obsm1,obsm3
 
 writeall force openframe_project_wrapper
 
-quit -noprompt
+# quit -noprompt
 

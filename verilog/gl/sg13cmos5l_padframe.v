@@ -36,45 +36,76 @@ module sg13cmos5l_padframe(
     output wire flash_clk_in,
     output wire flash_clk_out,
     output wire flash_clk_ena,
+    output wire flash_clk_one,
+    output wire flash_clk_zero,
     output wire flash_csb_in,
     output wire flash_csb_out,
     output wire flash_csb_ena,
+    output wire flash_csb_one,
+    output wire flash_csb_zero,
     output wire flash_io0_in,
     output wire flash_io0_out,
     output wire flash_io0_ena,
+    output wire flash_io0_one,
+    output wire flash_io0_zero,
     output wire flash_io1_in,
     output wire flash_io1_out,
     output wire flash_io1_ena,
+    output wire flash_io1_one,
+    output wire flash_io1_zero,
     output wire flash_io2_in,
     output wire flash_io2_out,
     output wire flash_io2_ena,
+    output wire flash_io2_one,
+    output wire flash_io2_zero,
     output wire flash_io3_in,
     output wire flash_io3_out,
     output wire flash_io3_ena,
+    output wire flash_io3_one,
+    output wire flash_io3_zero,
     output wire gpio0_in,
     output wire gpio0_out,
     output wire gpio0_ena,
+    output wire gpio0_one,
+    output wire gpio0_zero,
     output wire gpio1_in,
     output wire gpio1_out,
     output wire gpio1_ena,
+    output wire gpio1_one,
+    output wire gpio1_zero,
     output wire spi_SDO_in,
     output wire spi_SDO_out,
     output wire spi_SDO_ena,
+    output wire spi_SDO_one,
+    output wire spi_SDO_zero,
     output wire spi_CSB_in,
     output wire spi_CSB_out,
     output wire spi_CSB_ena,
+    output wire spi_CSB_one,
+    output wire spi_CSB_zero,
     output wire spi_SDI_in,
     output wire spi_SDI_out,
     output wire spi_SDI_ena,
+    output wire spi_SDI_one,
+    output wire spi_SDI_zero,
     output wire spi_SCK_in,
     output wire spi_SCK_out,
     output wire spi_SCK_ena,
+    output wire spi_SCK_one,
+    output wire spi_SCK_zero,
     output wire UART_Rx_in,
     output wire UART_Rx_out,
     output wire UART_Rx_ena,
+    output wire UART_Rx_one,
+    output wire UART_Rx_zero,
     output wire UART_Tx_in,
     output wire UART_Tx_out,
     output wire UART_Tx_ena,
+    output wire UART_Tx_one,
+    output wire UART_Tx_zero,
+
+    // Core signal connections:  User ID ROM
+    output wire [31:0] mask_rev,
 
     // Core signal connections:  Analog
     inout wire [28:0] analog_io,
@@ -826,7 +857,8 @@ module sg13cmos5l_padframe(
     );
 
     /* Filler pads between each bond pad */
-    sg13cmos5l_Filler10000 [59:0] spacer (
+
+    sg13cmos5l_Filler10000 spacer [59:0] (
 	`ifdef USE_POWER_PINS
 	    .iovdd(vddio),
 	    .iovss(vssio),
@@ -851,9 +883,126 @@ module sg13cmos5l_padframe(
     /* To do:  Add in constant block (digital 1/0 near each digital pad)
      * and user_id_programming (32-bit ROM block)
      */
-   // constant_block constant_block ();
-   // user_id_programming user_id_programming ();
+   constant_block constant_block_flash_csb (
+	`ifdef USE_POWER_PINS
+	    .vdd(vccd),
+	    .vss(vssd),
+	`endif	/* USE_POWER_PINS */
+	.one(flash_csb_one),
+	.zero(flash_csb_zero)
+   );
+   constant_block constant_block_flash_clk (
+	`ifdef USE_POWER_PINS
+	    .vdd(vccd),
+	    .vss(vssd),
+	`endif	/* USE_POWER_PINS */
+	.one(flash_clk_one),
+	.zero(flash_clk_zero)
+   );
+   constant_block constant_block_flash_io0 (
+	`ifdef USE_POWER_PINS
+	    .vdd(vccd),
+	    .vss(vssd),
+	`endif	/* USE_POWER_PINS */
+	.one(flash_io0_one),
+	.zero(flash_io0_zero)
+   );
+   constant_block constant_block_flash_io1 (
+	`ifdef USE_POWER_PINS
+	    .vdd(vccd),
+	    .vss(vssd),
+	`endif	/* USE_POWER_PINS */
+	.one(flash_io1_one),
+	.zero(flash_io1_zero)
+   );
+   constant_block constant_block_flash_io2 (
+	`ifdef USE_POWER_PINS
+	    .vdd(vccd),
+	    .vss(vssd),
+	`endif	/* USE_POWER_PINS */
+	.one(flash_io2_one),
+	.zero(flash_io2_zero)
+   );
+   constant_block constant_block_flash_io3 (
+	`ifdef USE_POWER_PINS
+	    .vdd(vccd),
+	    .vss(vssd),
+	`endif	/* USE_POWER_PINS */
+	.one(flash_io3_one),
+	.zero(flash_io3_zero)
+   );
+   constant_block constant_block_gpio0 (
+	`ifdef USE_POWER_PINS
+	    .vdd(vccd),
+	    .vss(vssd),
+	`endif	/* USE_POWER_PINS */
+	.one(gpio0_one),
+	.zero(gpio0_zero)
+   );
+   constant_block constant_block_gpio1 (
+	`ifdef USE_POWER_PINS
+	    .vdd(vccd),
+	    .vss(vssd),
+	`endif	/* USE_POWER_PINS */
+	.one(gpio1_one),
+	.zero(gpio1_zero)
+   );
+   constant_block constant_block_spi_SDO (
+	`ifdef USE_POWER_PINS
+	    .vdd(vccd),
+	    .vss(vssd),
+	`endif	/* USE_POWER_PINS */
+	.one(spi_SDO_one),
+	.zero(spi_SDO_zero)
+   );
+   constant_block constant_block_spi_SDI (
+	`ifdef USE_POWER_PINS
+	    .vdd(vccd),
+	    .vss(vssd),
+	`endif	/* USE_POWER_PINS */
+	.one(spi_SDI_one),
+	.zero(spi_SDI_zero)
+   );
+   constant_block constant_block_spi_CSB (
+	`ifdef USE_POWER_PINS
+	    .vdd(vccd),
+	    .vss(vssd),
+	`endif	/* USE_POWER_PINS */
+	.one(spi_CSB_one),
+	.zero(spi_CSB_zero)
+   );
+   constant_block constant_block_spi_SCK (
+	`ifdef USE_POWER_PINS
+	    .vdd(vccd),
+	    .vss(vssd),
+	`endif	/* USE_POWER_PINS */
+	.one(spi_SCK_one),
+	.zero(spi_SCK_zero)
+   );
+   constant_block constant_block_spi_UART_Rx (
+	`ifdef USE_POWER_PINS
+	    .vdd(vccd),
+	    .vss(vssd),
+	`endif	/* USE_POWER_PINS */
+	.one(UART_Rx_one),
+	.zero(UART_Rx_zero)
+   );
+   constant_block constant_block_spi_UART_Tx (
+	`ifdef USE_POWER_PINS
+	    .vdd(vccd),
+	    .vss(vssd),
+	`endif	/* USE_POWER_PINS */
+	.one(UART_Tx_one),
+	.zero(UART_Tx_zero)
+   );
 
+   user_id_programming user_id_programming (
+	`ifdef USE_POWER_PINS
+	    .VDD(vccd),
+	    .VSS(vssd),
+	`endif	/* USE_POWER_PINS */
+	.mask_rev(mask_rev)
+    );
 
 endmodule
 

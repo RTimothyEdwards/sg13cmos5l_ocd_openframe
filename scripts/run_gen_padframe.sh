@@ -16,6 +16,13 @@
 # Warning:
 #	This script needs to be run only once.  It cannot be run again until
 #	the padframe cell is deleted.
+#
+# To do:
+#	1. Additional automation to specify the type of I/O pad for each
+#	   "gpio" position, and use that as input to create the signals
+#	   based on each pad type.
+#	2. Automate the generation of the padframe verilog corresponding to
+#	   this layout.
 
 echo ${PDK_ROOT:=/home/tim/gits} > /dev/null
 echo ${PDK:=ihp-sg13cmos5l} > /dev/null

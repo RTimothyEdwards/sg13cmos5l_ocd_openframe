@@ -10,6 +10,7 @@ source ../scripts/layout_setup.tcl
 load $project
 select top cell
 extract path extfiles
+extract no all
 extract do unique
 extract all
 ext2spice lvs
