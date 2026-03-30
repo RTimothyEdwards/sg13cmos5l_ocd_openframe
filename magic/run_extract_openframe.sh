@@ -1,9 +1,13 @@
 #!/bin/bash
+#
+# set PROJECT to the final top level name.  If not set, the top level
+# name defaults to sg13cmos5l_caravel_openframe_final
+
+echo ${PROJECT:=sg13cmos5l_caravel_openframe_final} > /dev/null
 
 echo ${PDK_ROOT:=/home/tim/gits} > /dev/null
 echo ${PDK:=ihp-sg13cmos5l} > /dev/null
 
-project=sg13cmos5l_caravel_openframe_final
 
 magic -dnull -noconsole -rcfile $PDK_ROOT/$PDK/libs.tech/magic/${PDK}.magicrc << EOF
 source ../scripts/layout_setup.tcl
@@ -16,14 +20,14 @@ property FIXED_BBOX 0 0 1 1
 property LEFview true
 
 # Now read the project top level and extract it.
-load $project -dereference
+load $PROJECT -dereference
 select top cell
 extract path extfiles
 extract no all
 extract do unique
 extract all
 ext2spice lvs
-ext2spice -p extfiles -o ../netlist/layout/${project}.spice
+ext2spice -p extfiles -o ../netlist/layout/${PROJECT}.spice
 quit -noprompt
 EOF
 rm -r extfiles
