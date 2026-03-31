@@ -14,6 +14,7 @@
 
 `define UNIT_DELAY #1
 `define USE_POWER_PINS
+`define HAS_USER_PROJECT
 
 `default_nettype none
 

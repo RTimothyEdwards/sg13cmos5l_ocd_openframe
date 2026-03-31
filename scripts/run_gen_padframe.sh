@@ -30,7 +30,7 @@ echo ${PDK:=ihp-sg13cmos5l} > /dev/null
 cd magic
 
 magic -dnull -noconsole -rcfile ${PDK_ROOT}/${PDK}/libs.tech/magic/${PDK}.magicrc << EOF
-source ../scripts/run_gen_padframe.tcl
+source ../scripts/gen_padframe.tcl
 EOF
 
 echo "Done!"

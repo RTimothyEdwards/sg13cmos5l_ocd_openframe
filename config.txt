@@ -1,0 +1,75 @@
+#-----------------------------------------------------------------
+# config.txt:  Project and I/O configuration for Caravel Openframe
+#
+# Editable fields:
+#
+# 1. The project ID number is an arbitrary user-selected 8 hex digits
+#
+# 2. The "pad type" is one of 11 valid pad types:
+#		sg13cmos5l_IOPadIn
+#		sg13cmos5l_IOPadOut4mA
+#		sg13cmos5l_IOPadOut16mA
+#		sg13cmos5l_IOPadOut30mA
+#		sg13cmos5l_IOPadTriOut4mA
+#		sg13cmos5l_IOPadTriOut16mA
+#		sg13cmos5l_IOPadTriOut30mA
+#		sg13cmos5l_IOPadInOut4mA
+#		sg13cmos5l_IOPadInOut16mA
+#		sg13cmos5l_IOPadInOut30mA
+#		sg13cmos5l_IOPadAnalog
+#
+# 3. The "core signal name" is an arbitrary name for the core signal
+#	(root name) at each pin
+#
+# Do *not* change the key values ("project_id" and "gpio[x]").
+#-----------------------------------------------------------------
+
+project_id: 20260330
+
+#-----------------------------------------------------------------
+# Pad name	Pad type			Core signal name
+#-----------------------------------------------------------------
+gpio[0]: 	sg13cmos5l_IOPadInOut4mA	gpio1
+gpio[1]:	sg13cmos5l_IOPadInOut4mA	spi_SDO
+gpio[2]:	sg13cmos5l_IOPadInOut4mA	spi_SDI
+gpio[3]:	sg13cmos5l_IOPadInOut4mA	spi_CSB
+gpio[4]:	sg13cmos5l_IOPadInOut4mA	spi_SCK
+gpio[5]:	sg13cmos5l_IOPadInOut4mA	UART_Rx
+gpio[6]:	sg13cmos5l_IOPadInOut4mA	UART_Tx
+gpio[7]:	sg13cmos5l_IOPadAnalog		analog_io_7
+gpio[8]:	sg13cmos5l_IOPadAnalog		analog_io_8
+gpio[9]:	sg13cmos5l_IOPadAnalog		analog_io_9
+gpio[10]:	sg13cmos5l_IOPadAnalog		analog_io_10
+gpio[11]:	sg13cmos5l_IOPadAnalog		analog_io_11
+gpio[12]:	sg13cmos5l_IOPadAnalog		analog_io_12
+gpio[13]:	sg13cmos5l_IOPadAnalog		analog_io_13
+gpio[14]:	sg13cmos5l_IOPadAnalog		analog_io_14
+gpio[15]:	sg13cmos5l_IOPadAnalog		analog_io_15
+gpio[16]:	sg13cmos5l_IOPadAnalog		analog_io_16
+gpio[17]:	sg13cmos5l_IOPadAnalog		analog_io_17
+gpio[18]:	sg13cmos5l_IOPadAnalog		analog_io_18
+gpio[19]:	sg13cmos5l_IOPadAnalog		analog_io_19
+gpio[20]:	sg13cmos5l_IOPadAnalog		analog_io_20
+gpio[21]:	sg13cmos5l_IOPadAnalog		analog_io_21
+gpio[22]:	sg13cmos5l_IOPadAnalog		analog_io_22
+gpio[23]:	sg13cmos5l_IOPadAnalog		analog_io_23
+gpio[24]:	sg13cmos5l_IOPadAnalog		analog_io_24
+gpio[25]:	sg13cmos5l_IOPadAnalog		analog_io_25
+gpio[26]:	sg13cmos5l_IOPadAnalog		analog_io_26
+gpio[27]:	sg13cmos5l_IOPadAnalog		analog_io_27
+gpio[28]:	sg13cmos5l_IOPadAnalog		analog_io_28
+gpio[29]:	sg13cmos5l_IOPadAnalog		analog_io_29
+gpio[30]:	sg13cmos5l_IOPadAnalog		analog_io_30
+gpio[31]:	sg13cmos5l_IOPadAnalog		analog_io_31
+gpio[32]:	sg13cmos5l_IOPadAnalog		analog_io_32
+gpio[33]:	sg13cmos5l_IOPadAnalog		analog_io_33
+gpio[34]:	sg13cmos5l_IOPadAnalog		analog_io_34
+gpio[35]:	sg13cmos5l_IOPadAnalog		analog_io_35
+gpio[36]:	sg13cmos5l_IOPadInOut4mA	flash_io2
+gpio[37]:	sg13cmos5l_IOPadInOut4mA	flash_io3
+gpio[38]:	sg13cmos5l_IOPadIn		clock_in
+gpio[39]:	sg13cmos5l_IOPadInOut4mA	flash_csb
+gpio[40]:	sg13cmos5l_IOPadInOut4mA	flash_clk
+gpio[41]:	sg13cmos5l_IOPadInOut4mA	flash_io0
+gpio[42]:	sg13cmos5l_IOPadInOut4mA	flash_io1
+gpio[43]:	sg13cmos5l_IOPadInOut4mA	gpio0

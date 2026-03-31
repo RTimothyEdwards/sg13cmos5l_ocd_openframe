@@ -29,7 +29,7 @@
 #
 # The user ID number is a 32-bit value that is passed to this routine
 # as an 8-digit hex number.  If not given as an option, then the script
-# will look for the value of the key "project_id" in the info.yaml file
+# will look for the value of the key "project_id" in the config.txt file
 # in the project top level directory.  If in "-report" mode, it will
 # check the RTL top-level verilog to see if set_user_id.py has already
 # been applied, and pull the value from there.
@@ -89,7 +89,7 @@ def usage():
     print("    <user_id_value>   is a character string of eight hex digits, and")
     print("    <path_to_project> is the path to the project top level directory.")
     print("")
-    print("  If <user_id_value> is not given, then it must exist in the info.yaml file.")
+    print("  If <user_id_value> is not given, then it must exist in the config.txt file.")
     print("  If <path_to_project> is not given, then it is assumed to be the cwd.")
     print("")
     print("  -debug:  Output additional information while running.")
@@ -162,8 +162,8 @@ if __name__ == '__main__':
     # Check for valid directories
 
     if not user_id_value:
-        if os.path.isfile(user_project_path + '/info.yaml'):
-            with open(user_project_path + '/info.yaml', 'r') as ifile:
+        if os.path.isfile(user_project_path + '/config.txt'):
+            with open(user_project_path + '/config.txt', 'r') as ifile:
                 infolines = ifile.read().splitlines()
                 for line in infolines:
                     kvpair = line.split(':')
@@ -175,7 +175,7 @@ if __name__ == '__main__':
                             break
 
             if not user_id_value:
-                print('Error:  No project_id key:value pair found in project info.yaml.')
+                print('Error:  No project_id key:value pair found in project config.txt.')
                 sys.exit(1)
 
             try:
@@ -212,7 +212,7 @@ if __name__ == '__main__':
                     print('Error:  No USER_PROJECT_ID found in caravel top level verilog.')
                     sys.exit(1)
         else:
-            print('Error:  No info.yaml file and no user ID argument given.')
+            print('Error:  No config.txt file and no user ID argument given.')
             sys.exit(1)
 
     if reportmode:

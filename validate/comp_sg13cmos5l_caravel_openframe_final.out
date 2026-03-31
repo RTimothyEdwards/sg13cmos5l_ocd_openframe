@@ -4417,427 +4417,199 @@ Cell openframe_project_wrapper (0) disconnected node: UART_Tx_one
 Cell openframe_project_wrapper (0) disconnected node: flash_io2_one
 Cell openframe_project_wrapper (0) disconnected node: vssio_uq0
 Cell openframe_project_wrapper (0) disconnected node: vssd_uq0
-Flattening instances of openframe_user_project in cell openframe_project_wrapper (0) makes a better match
-Making another compare attempt.
-
-Cell openframe_project_wrapper (0) disconnected node: vssio
-Cell openframe_project_wrapper (0) disconnected node: clock_in
-Cell openframe_project_wrapper (0) disconnected node: flash_csb_in
-Cell openframe_project_wrapper (0) disconnected node: flash_clk_in
-Cell openframe_project_wrapper (0) disconnected node: flash_io0_in
-Cell openframe_project_wrapper (0) disconnected node: flash_io1_in
-Cell openframe_project_wrapper (0) disconnected node: gpio0_in
-Cell openframe_project_wrapper (0) disconnected node: gpio1_in
-Cell openframe_project_wrapper (0) disconnected node: spi_SDO_in
-Cell openframe_project_wrapper (0) disconnected node: UART_Rx_in
-Cell openframe_project_wrapper (0) disconnected node: UART_Tx_in
-Cell openframe_project_wrapper (0) disconnected node: option_in
-Cell openframe_project_wrapper (0) disconnected node: flash_io2_in
-Cell openframe_project_wrapper (0) disconnected node: flash_io3_in
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[0]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[1]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[2]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[3]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[4]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[5]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[6]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[7]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[8]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[9]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[10]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[11]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[12]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[13]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[14]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[15]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[16]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[17]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[18]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[19]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[20]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[21]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[22]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[23]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[24]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[25]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[26]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[27]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[28]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[2]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[3]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[4]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[5]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[6]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[7]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[8]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[9]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[10]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[11]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[12]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[13]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[14]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[15]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[16]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[17]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[19]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[26]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[28]
-Cell openframe_project_wrapper (0) disconnected node: flash_csb_one
-Cell openframe_project_wrapper (0) disconnected node: flash_clk_one
-Cell openframe_project_wrapper (0) disconnected node: flash_io0_one
-Cell openframe_project_wrapper (0) disconnected node: flash_io1_one
-Cell openframe_project_wrapper (0) disconnected node: gpio0_one
-Cell openframe_project_wrapper (0) disconnected node: gpio1_one
-Cell openframe_project_wrapper (0) disconnected node: spi_SDI_one
-Cell openframe_project_wrapper (0) disconnected node: spi_CSB_one
-Cell openframe_project_wrapper (0) disconnected node: spi_SCK_one
-Cell openframe_project_wrapper (0) disconnected node: UART_Rx_one
-Cell openframe_project_wrapper (0) disconnected node: UART_Tx_one
-Cell openframe_project_wrapper (0) disconnected node: flash_io2_one
-Cell openframe_project_wrapper (0) disconnected node: vssio_uq0
-Cell openframe_project_wrapper (0) disconnected node: vssd_uq0
-Flattening instances of sg13cmos5l_ocd_ip__bandgap in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of power_stage in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_ocd_ip__voltgen in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_ocd_ip__biasgen1 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of housekeeping_top in cell openframe_project_wrapper (0) makes a better match
-Making another compare attempt.
-
-Cell openframe_project_wrapper (0) disconnected node: vssio
-Cell openframe_project_wrapper (0) disconnected node: clock_in
-Cell openframe_project_wrapper (0) disconnected node: flash_csb_in
-Cell openframe_project_wrapper (0) disconnected node: flash_clk_in
-Cell openframe_project_wrapper (0) disconnected node: flash_io0_in
-Cell openframe_project_wrapper (0) disconnected node: flash_io1_in
-Cell openframe_project_wrapper (0) disconnected node: gpio0_in
-Cell openframe_project_wrapper (0) disconnected node: gpio1_in
-Cell openframe_project_wrapper (0) disconnected node: spi_SDO_in
-Cell openframe_project_wrapper (0) disconnected node: UART_Rx_in
-Cell openframe_project_wrapper (0) disconnected node: UART_Tx_in
-Cell openframe_project_wrapper (0) disconnected node: option_in
-Cell openframe_project_wrapper (0) disconnected node: flash_io2_in
-Cell openframe_project_wrapper (0) disconnected node: flash_io3_in
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[0]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[1]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[2]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[3]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[4]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[5]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[6]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[7]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[8]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[9]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[10]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[11]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[12]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[13]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[14]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[15]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[16]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[17]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[18]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[19]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[20]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[21]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[22]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[23]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[24]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[25]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[26]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[27]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[28]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[2]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[3]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[4]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[5]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[6]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[7]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[8]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[9]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[10]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[11]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[12]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[13]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[14]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[15]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[16]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[17]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[19]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[26]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[28]
-Cell openframe_project_wrapper (0) disconnected node: flash_csb_one
-Cell openframe_project_wrapper (0) disconnected node: flash_clk_one
-Cell openframe_project_wrapper (0) disconnected node: flash_io0_one
-Cell openframe_project_wrapper (0) disconnected node: flash_io1_one
-Cell openframe_project_wrapper (0) disconnected node: gpio0_one
-Cell openframe_project_wrapper (0) disconnected node: gpio1_one
-Cell openframe_project_wrapper (0) disconnected node: spi_SDI_one
-Cell openframe_project_wrapper (0) disconnected node: spi_CSB_one
-Cell openframe_project_wrapper (0) disconnected node: spi_SCK_one
-Cell openframe_project_wrapper (0) disconnected node: UART_Rx_one
-Cell openframe_project_wrapper (0) disconnected node: UART_Tx_one
-Cell openframe_project_wrapper (0) disconnected node: flash_io2_one
-Cell openframe_project_wrapper (0) disconnected node: vssio_uq0
-Cell openframe_project_wrapper (0) disconnected node: vssd_uq0
-Flattening instances of sg13cmos5l_inv_1 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_inv_2 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_inv_4 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_xor2_1 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_nand2_1 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_nand2_2 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_nand3_1 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_or2_1 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_a21o_1 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_a21o_2 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_nand4_1 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_a22oi_1 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_or3_1 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_or3_2 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_buf_16 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_dfrbpq_1 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_mux2_1 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_mux2_2 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_and2_1 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of gate_drive in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_and3_1 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_and3_2 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of bandgap_unbuffered in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_decap_4 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_decap_8 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_nor2_1 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_nor2_2 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_and4_1 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of level_shift in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_nor3_1 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_nor4_2 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_a221oi_1 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_xnor2_1 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_nand2b_1 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_nand2b_2 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_nor2b_1 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of n_amp_large in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_antennanp in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_nand3b_1 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_a21oi_1 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_a21oi_2 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_buf_1 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_buf_2 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_buf_4 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_buf_8 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of bias_nstack in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_dlygate4sd3_1 in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of sg13cmos5l_o21ai_1 in cell openframe_project_wrapper (0) makes a better match
-Making another compare attempt.
-
-Cell openframe_project_wrapper (0) disconnected node: vssio
-Cell openframe_project_wrapper (0) disconnected node: clock_in
-Cell openframe_project_wrapper (0) disconnected node: flash_csb_in
-Cell openframe_project_wrapper (0) disconnected node: flash_clk_in
-Cell openframe_project_wrapper (0) disconnected node: flash_io0_in
-Cell openframe_project_wrapper (0) disconnected node: flash_io1_in
-Cell openframe_project_wrapper (0) disconnected node: gpio0_in
-Cell openframe_project_wrapper (0) disconnected node: gpio1_in
-Cell openframe_project_wrapper (0) disconnected node: spi_SDO_in
-Cell openframe_project_wrapper (0) disconnected node: UART_Rx_in
-Cell openframe_project_wrapper (0) disconnected node: UART_Tx_in
-Cell openframe_project_wrapper (0) disconnected node: option_in
-Cell openframe_project_wrapper (0) disconnected node: flash_io2_in
-Cell openframe_project_wrapper (0) disconnected node: flash_io3_in
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[0]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[1]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[2]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[3]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[4]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[5]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[6]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[7]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[8]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[9]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[10]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[11]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[12]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[13]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[14]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[15]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[16]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[17]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[18]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[19]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[20]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[21]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[22]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[23]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[24]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[25]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[26]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[27]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[28]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[2]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[3]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[4]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[5]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[6]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[7]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[8]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[9]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[10]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[11]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[12]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[13]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[14]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[15]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[16]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[17]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[19]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[26]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[28]
-Cell openframe_project_wrapper (0) disconnected node: flash_csb_one
-Cell openframe_project_wrapper (0) disconnected node: flash_clk_one
-Cell openframe_project_wrapper (0) disconnected node: flash_io0_one
-Cell openframe_project_wrapper (0) disconnected node: flash_io1_one
-Cell openframe_project_wrapper (0) disconnected node: gpio0_one
-Cell openframe_project_wrapper (0) disconnected node: gpio1_one
-Cell openframe_project_wrapper (0) disconnected node: spi_SDI_one
-Cell openframe_project_wrapper (0) disconnected node: spi_CSB_one
-Cell openframe_project_wrapper (0) disconnected node: spi_SCK_one
-Cell openframe_project_wrapper (0) disconnected node: UART_Rx_one
-Cell openframe_project_wrapper (0) disconnected node: UART_Tx_one
-Cell openframe_project_wrapper (0) disconnected node: flash_io2_one
-Cell openframe_project_wrapper (0) disconnected node: vssio_uq0
-Cell openframe_project_wrapper (0) disconnected node: vssd_uq0
-Flattening instances of bias_generator_be1n in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of bias_generator_be1p in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of bias_generator_be0n in cell openframe_project_wrapper (0) makes a better match
-Flattening instances of bias_generator_be0p in cell openframe_project_wrapper (0) makes a better match
-Making another compare attempt.
-
-Cell openframe_project_wrapper (0) disconnected node: vssio
-Cell openframe_project_wrapper (0) disconnected node: clock_in
-Cell openframe_project_wrapper (0) disconnected node: flash_csb_in
-Cell openframe_project_wrapper (0) disconnected node: flash_clk_in
-Cell openframe_project_wrapper (0) disconnected node: flash_io0_in
-Cell openframe_project_wrapper (0) disconnected node: flash_io1_in
-Cell openframe_project_wrapper (0) disconnected node: gpio0_in
-Cell openframe_project_wrapper (0) disconnected node: gpio1_in
-Cell openframe_project_wrapper (0) disconnected node: spi_SDO_in
-Cell openframe_project_wrapper (0) disconnected node: UART_Rx_in
-Cell openframe_project_wrapper (0) disconnected node: UART_Tx_in
-Cell openframe_project_wrapper (0) disconnected node: option_in
-Cell openframe_project_wrapper (0) disconnected node: flash_io2_in
-Cell openframe_project_wrapper (0) disconnected node: flash_io3_in
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[0]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[1]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[2]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[3]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[4]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[5]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[6]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[7]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[8]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[9]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[10]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[11]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[12]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[13]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[14]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[15]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[16]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[17]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[18]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[19]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[20]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[21]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[22]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[23]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[24]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[25]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[26]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[27]
-Cell openframe_project_wrapper (0) disconnected node: analog_io_esd[28]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[2]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[3]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[4]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[5]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[6]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[7]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[8]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[9]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[10]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[11]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[12]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[13]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[14]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[15]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[16]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[17]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[19]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[26]
-Cell openframe_project_wrapper (0) disconnected node: analog_io[28]
-Cell openframe_project_wrapper (0) disconnected node: flash_csb_one
-Cell openframe_project_wrapper (0) disconnected node: flash_clk_one
-Cell openframe_project_wrapper (0) disconnected node: flash_io0_one
-Cell openframe_project_wrapper (0) disconnected node: flash_io1_one
-Cell openframe_project_wrapper (0) disconnected node: gpio0_one
-Cell openframe_project_wrapper (0) disconnected node: gpio1_one
-Cell openframe_project_wrapper (0) disconnected node: spi_SDI_one
-Cell openframe_project_wrapper (0) disconnected node: spi_CSB_one
-Cell openframe_project_wrapper (0) disconnected node: spi_SCK_one
-Cell openframe_project_wrapper (0) disconnected node: UART_Rx_one
-Cell openframe_project_wrapper (0) disconnected node: UART_Tx_one
-Cell openframe_project_wrapper (0) disconnected node: flash_io2_one
-Cell openframe_project_wrapper (0) disconnected node: vssio_uq0
-Cell openframe_project_wrapper (0) disconnected node: vssd_uq0
-Class openframe_project_wrapper (0):  Merged 32389 parallel devices.
+Cell openframe_project_wrapper (1) disconnected node: resetb_in
+Cell openframe_project_wrapper (1) disconnected node: clock_in
+Cell openframe_project_wrapper (1) disconnected node: flash_csb_in
+Cell openframe_project_wrapper (1) disconnected node: flash_csb_one
+Cell openframe_project_wrapper (1) disconnected node: flash_clk_in
+Cell openframe_project_wrapper (1) disconnected node: flash_clk_one
+Cell openframe_project_wrapper (1) disconnected node: flash_io0_in
+Cell openframe_project_wrapper (1) disconnected node: flash_io0_one
+Cell openframe_project_wrapper (1) disconnected node: flash_io1_in
+Cell openframe_project_wrapper (1) disconnected node: flash_io1_one
+Cell openframe_project_wrapper (1) disconnected node: gpio0_in
+Cell openframe_project_wrapper (1) disconnected node: gpio0_one
+Cell openframe_project_wrapper (1) disconnected node: gpio1_in
+Cell openframe_project_wrapper (1) disconnected node: gpio1_one
+Cell openframe_project_wrapper (1) disconnected node: spi_SDO_in
+Cell openframe_project_wrapper (1) disconnected node: spi_SDI_one
+Cell openframe_project_wrapper (1) disconnected node: spi_CSB_one
+Cell openframe_project_wrapper (1) disconnected node: spi_SCK_one
+Cell openframe_project_wrapper (1) disconnected node: UART_Rx_in
+Cell openframe_project_wrapper (1) disconnected node: UART_Rx_one
+Cell openframe_project_wrapper (1) disconnected node: UART_Tx_in
+Cell openframe_project_wrapper (1) disconnected node: UART_Tx_one
+Cell openframe_project_wrapper (1) disconnected node: analog_io[28]
+Cell openframe_project_wrapper (1) disconnected node: analog_io[26]
+Cell openframe_project_wrapper (1) disconnected node: analog_io[19]
+Cell openframe_project_wrapper (1) disconnected node: analog_io[17]
+Cell openframe_project_wrapper (1) disconnected node: analog_io[16]
+Cell openframe_project_wrapper (1) disconnected node: analog_io[15]
+Cell openframe_project_wrapper (1) disconnected node: analog_io[14]
+Cell openframe_project_wrapper (1) disconnected node: analog_io[13]
+Cell openframe_project_wrapper (1) disconnected node: analog_io[12]
+Cell openframe_project_wrapper (1) disconnected node: analog_io[11]
+Cell openframe_project_wrapper (1) disconnected node: analog_io[10]
+Cell openframe_project_wrapper (1) disconnected node: analog_io[9]
+Cell openframe_project_wrapper (1) disconnected node: analog_io[8]
+Cell openframe_project_wrapper (1) disconnected node: analog_io[7]
+Cell openframe_project_wrapper (1) disconnected node: analog_io[6]
+Cell openframe_project_wrapper (1) disconnected node: analog_io[5]
+Cell openframe_project_wrapper (1) disconnected node: analog_io[4]
+Cell openframe_project_wrapper (1) disconnected node: analog_io[3]
+Cell openframe_project_wrapper (1) disconnected node: analog_io[2]
+Cell openframe_project_wrapper (1) disconnected node: analog_io_esd[28]
+Cell openframe_project_wrapper (1) disconnected node: analog_io_esd[27]
+Cell openframe_project_wrapper (1) disconnected node: analog_io_esd[26]
+Cell openframe_project_wrapper (1) disconnected node: analog_io_esd[25]
+Cell openframe_project_wrapper (1) disconnected node: analog_io_esd[24]
+Cell openframe_project_wrapper (1) disconnected node: analog_io_esd[23]
+Cell openframe_project_wrapper (1) disconnected node: analog_io_esd[22]
+Cell openframe_project_wrapper (1) disconnected node: analog_io_esd[21]
+Cell openframe_project_wrapper (1) disconnected node: analog_io_esd[20]
+Cell openframe_project_wrapper (1) disconnected node: analog_io_esd[19]
+Cell openframe_project_wrapper (1) disconnected node: analog_io_esd[18]
+Cell openframe_project_wrapper (1) disconnected node: analog_io_esd[17]
+Cell openframe_project_wrapper (1) disconnected node: analog_io_esd[16]
+Cell openframe_project_wrapper (1) disconnected node: analog_io_esd[15]
+Cell openframe_project_wrapper (1) disconnected node: analog_io_esd[14]
+Cell openframe_project_wrapper (1) disconnected node: analog_io_esd[13]
+Cell openframe_project_wrapper (1) disconnected node: analog_io_esd[12]
+Cell openframe_project_wrapper (1) disconnected node: analog_io_esd[11]
+Cell openframe_project_wrapper (1) disconnected node: analog_io_esd[10]
+Cell openframe_project_wrapper (1) disconnected node: analog_io_esd[9]
+Cell openframe_project_wrapper (1) disconnected node: analog_io_esd[8]
+Cell openframe_project_wrapper (1) disconnected node: analog_io_esd[7]
+Cell openframe_project_wrapper (1) disconnected node: analog_io_esd[6]
+Cell openframe_project_wrapper (1) disconnected node: analog_io_esd[5]
+Cell openframe_project_wrapper (1) disconnected node: analog_io_esd[4]
+Cell openframe_project_wrapper (1) disconnected node: analog_io_esd[3]
+Cell openframe_project_wrapper (1) disconnected node: analog_io_esd[2]
+Cell openframe_project_wrapper (1) disconnected node: analog_io_esd[1]
+Cell openframe_project_wrapper (1) disconnected node: analog_io_esd[0]
+Cell openframe_project_wrapper (1) disconnected node: option_in
+Cell openframe_project_wrapper (1) disconnected node: flash_io2_in
+Cell openframe_project_wrapper (1) disconnected node: flash_io2_one
+Cell openframe_project_wrapper (1) disconnected node: flash_io3_in
+Subcircuit summary:
+Circuit 1: openframe_project_wrapper                                         |Circuit 2: openframe_project_wrapper                                         
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+openframe_user_project (1)                                                   |openframe_user_project (1)                                                   
+Number of devices: 1                                                         |Number of devices: 1                                                         
+Number of nets: 94                                                           |Number of nets: 94                                                           
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Netlists match uniquely with port errors.
 
 Subcircuit pins:
 Circuit 1: openframe_project_wrapper                                         |Circuit 2: openframe_project_wrapper                                         
 -----------------------------------------------------------------------------|-----------------------------------------------------------------------------
-vssio                                                                        |vssio                                                                        
-resetb_in                                                                    |resetb_in                                                                    
-clock_in                                                                     |clock_in                                                                     
-flash_csb_in                                                                 |flash_csb_in                                                                 
-flash_csb_ena                                                                |flash_csb_ena                                                                
-flash_csb_out                                                                |flash_csb_out                                                                
-flash_clk_in                                                                 |flash_clk_in                                                                 
-flash_clk_ena                                                                |flash_clk_ena                                                                
-flash_clk_out                                                                |flash_clk_out                                                                
-flash_io0_in                                                                 |flash_io0_in                                                                 
-flash_io0_ena                                                                |flash_io0_ena                                                                
-flash_io0_out                                                                |flash_io0_out                                                                
-flash_io1_in                                                                 |flash_io1_in                                                                 
-flash_io1_ena                                                                |flash_io1_ena                                                                
-flash_io1_out                                                                |flash_io1_out                                                                
-gpio0_in                                                                     |gpio0_in                                                                     
+vddio                                                                        |vddio                                                                        
+sub                                                                          |vssio **Mismatch**                                                           
+vccd                                                                         |vccd                                                                         
+vssd                                                                         |vssd                                                                         
+gpio0_zero                                                                   |gpio0_zero                                                                   
 gpio0_ena                                                                    |gpio0_ena                                                                    
 gpio0_out                                                                    |gpio0_out                                                                    
-gpio1_in                                                                     |gpio1_in                                                                     
+gpio1_zero                                                                   |gpio1_zero                                                                   
 gpio1_ena                                                                    |gpio1_ena                                                                    
 gpio1_out                                                                    |gpio1_out                                                                    
-spi_SDO_in                                                                   |spi_SDO_in                                                                   
-spi_SDO_ena                                                                  |spi_SDO_ena                                                                  
-spi_SDO_out                                                                  |spi_SDO_out                                                                  
-spi_SDI_in                                                                   |spi_SDI_in                                                                   
+UART_Rx_zero                                                                 |UART_Rx_zero                                                                 
+UART_Rx_ena                                                                  |UART_Rx_ena                                                                  
+analog_io[0]                                                                 |analog_io[0]                                                                 
+analog_io[1]                                                                 |analog_io[1]                                                                 
+UART_Rx_out                                                                  |UART_Rx_out                                                                  
+UART_Tx_ena                                                                  |UART_Tx_ena                                                                  
+UART_Tx_zero                                                                 |UART_Tx_zero                                                                 
+UART_Tx_out                                                                  |UART_Tx_out                                                                  
+spi_SDI_zero                                                                 |spi_SDI_zero                                                                 
 spi_SDI_ena                                                                  |spi_SDI_ena                                                                  
 spi_SDI_out                                                                  |spi_SDI_out                                                                  
-spi_CSB_in                                                                   |spi_CSB_in                                                                   
+analog_io[27]                                                                |analog_io[27]                                                                
 spi_CSB_ena                                                                  |spi_CSB_ena                                                                  
+spi_CSB_zero                                                                 |spi_CSB_zero                                                                 
+analog_io[24]                                                                |analog_io[24]                                                                
 spi_CSB_out                                                                  |spi_CSB_out                                                                  
-spi_SCK_in                                                                   |spi_SCK_in                                                                   
+analog_io[22]                                                                |analog_io[22]                                                                
+analog_io[21]                                                                |analog_io[21]                                                                
+spi_SCK_zero                                                                 |spi_SCK_zero                                                                 
 spi_SCK_ena                                                                  |spi_SCK_ena                                                                  
+analog_io[25]                                                                |analog_io[25]                                                                
+analog_io[23]                                                                |analog_io[23]                                                                
+analog_io[18]                                                                |analog_io[18]                                                                
 spi_SCK_out                                                                  |spi_SCK_out                                                                  
-UART_Rx_in                                                                   |UART_Rx_in                                                                   
-UART_Rx_ena                                                                  |UART_Rx_ena                                                                  
-UART_Rx_out                                                                  |UART_Rx_out                                                                  
-UART_Tx_in                                                                   |UART_Tx_in                                                                   
-UART_Tx_ena                                                                  |UART_Tx_ena                                                                  
-UART_Tx_out                                                                  |UART_Tx_out                                                                  
-option_in                                                                    |option_in                                                                    
-flash_io2_in                                                                 |flash_io2_in                                                                 
+analog_io[20]                                                                |analog_io[20]                                                                
+flash_csb_zero                                                               |flash_csb_zero                                                               
+flash_csb_ena                                                                |flash_csb_ena                                                                
+flash_csb_out                                                                |flash_csb_out                                                                
+flash_clk_zero                                                               |flash_clk_zero                                                               
+flash_clk_ena                                                                |flash_clk_ena                                                                
+flash_clk_out                                                                |flash_clk_out                                                                
+flash_io0_zero                                                               |flash_io0_zero                                                               
+flash_io0_ena                                                                |flash_io0_ena                                                                
+flash_io0_out                                                                |flash_io0_out                                                                
+resetb_in                                                                    |(no pin, node is _noconnect_1_)                                              
+spi_SCK_in                                                                   |spi_SCK_in                                                                   
+spi_SDO_out                                                                  |spi_SDO_out                                                                  
+spi_SDI_in                                                                   |spi_SDI_in                                                                   
+flash_io1_zero                                                               |flash_io1_zero                                                               
+flash_io1_ena                                                                |flash_io1_ena                                                                
+spi_CSB_in                                                                   |spi_CSB_in                                                                   
+spi_SDO_ena                                                                  |spi_SDO_ena                                                                  
+flash_io1_out                                                                |flash_io1_out                                                                
+mask_rev[31]                                                                 |mask_rev[31]                                                                 
+mask_rev[30]                                                                 |mask_rev[30]                                                                 
+mask_rev[29]                                                                 |mask_rev[29]                                                                 
+mask_rev[28]                                                                 |mask_rev[28]                                                                 
+mask_rev[27]                                                                 |mask_rev[27]                                                                 
+mask_rev[26]                                                                 |mask_rev[26]                                                                 
+mask_rev[25]                                                                 |mask_rev[25]                                                                 
+mask_rev[24]                                                                 |mask_rev[24]                                                                 
+mask_rev[23]                                                                 |mask_rev[23]                                                                 
+mask_rev[22]                                                                 |mask_rev[22]                                                                 
+mask_rev[21]                                                                 |mask_rev[21]                                                                 
+mask_rev[20]                                                                 |mask_rev[20]                                                                 
+mask_rev[19]                                                                 |mask_rev[19]                                                                 
+mask_rev[18]                                                                 |mask_rev[18]                                                                 
+mask_rev[17]                                                                 |mask_rev[17]                                                                 
+mask_rev[16]                                                                 |mask_rev[16]                                                                 
+mask_rev[15]                                                                 |mask_rev[15]                                                                 
+mask_rev[14]                                                                 |mask_rev[14]                                                                 
+mask_rev[13]                                                                 |mask_rev[13]                                                                 
+mask_rev[12]                                                                 |mask_rev[12]                                                                 
+mask_rev[11]                                                                 |mask_rev[11]                                                                 
+mask_rev[10]                                                                 |mask_rev[10]                                                                 
+mask_rev[9]                                                                  |mask_rev[9]                                                                  
+mask_rev[8]                                                                  |mask_rev[8]                                                                  
+mask_rev[7]                                                                  |mask_rev[7]                                                                  
+mask_rev[6]                                                                  |mask_rev[6]                                                                  
+mask_rev[5]                                                                  |mask_rev[5]                                                                  
+mask_rev[4]                                                                  |mask_rev[4]                                                                  
+mask_rev[3]                                                                  |mask_rev[3]                                                                  
+mask_rev[2]                                                                  |mask_rev[2]                                                                  
+mask_rev[1]                                                                  |mask_rev[1]                                                                  
+mask_rev[0]                                                                  |mask_rev[0]                                                                  
+flash_io2_zero                                                               |flash_io2_zero                                                               
 flash_io2_ena                                                                |flash_io2_ena                                                                
 flash_io2_out                                                                |flash_io2_out                                                                
-flash_io3_in                                                                 |flash_io3_in                                                                 
+flash_io3_zero                                                               |flash_io3_zero                                                               
 flash_io3_ena                                                                |flash_io3_ena                                                                
 flash_io3_out                                                                |flash_io3_out                                                                
+spi_SDO_one                                                                  |spi_SDO_one                                                                  
+spi_SDO_zero                                                                 |spi_SDO_zero                                                                 
+flash_io3_one                                                                |flash_io3_one                                                                
+clock_in                                                                     |clock_in                                                                     
+flash_csb_in                                                                 |flash_csb_in                                                                 
+flash_clk_in                                                                 |flash_clk_in                                                                 
+flash_io0_in                                                                 |flash_io0_in                                                                 
+flash_io1_in                                                                 |flash_io1_in                                                                 
+gpio0_in                                                                     |gpio0_in                                                                     
+gpio1_in                                                                     |gpio1_in                                                                     
+spi_SDO_in                                                                   |spi_SDO_in                                                                   
+UART_Rx_in                                                                   |UART_Rx_in                                                                   
+UART_Tx_in                                                                   |UART_Tx_in                                                                   
+option_in                                                                    |option_in                                                                    
+flash_io2_in                                                                 |flash_io2_in                                                                 
+flash_io3_in                                                                 |flash_io3_in                                                                 
 analog_io_esd[0]                                                             |analog_io_esd[0]                                                             
 analog_io_esd[1]                                                             |analog_io_esd[1]                                                             
 analog_io_esd[2]                                                             |analog_io_esd[2]                                                             
@@ -4867,8 +4639,6 @@ analog_io_esd[25]                                                            |an
 analog_io_esd[26]                                                            |analog_io_esd[26]                                                            
 analog_io_esd[27]                                                            |analog_io_esd[27]                                                            
 analog_io_esd[28]                                                            |analog_io_esd[28]                                                            
-analog_io[0]                                                                 |analog_io[0]                                                                 
-analog_io[1]                                                                 |analog_io[1]                                                                 
 analog_io[2]                                                                 |analog_io[2]                                                                 
 analog_io[3]                                                                 |analog_io[3]                                                                 
 analog_io[4]                                                                 |analog_io[4]                                                                 
@@ -4885,85 +4655,27 @@ analog_io[14]                                                                |an
 analog_io[15]                                                                |analog_io[15]                                                                
 analog_io[16]                                                                |analog_io[16]                                                                
 analog_io[17]                                                                |analog_io[17]                                                                
-analog_io[18]                                                                |analog_io[18]                                                                
 analog_io[19]                                                                |analog_io[19]                                                                
-analog_io[20]                                                                |analog_io[20]                                                                
-analog_io[21]                                                                |analog_io[21]                                                                
-analog_io[22]                                                                |analog_io[22]                                                                
-analog_io[23]                                                                |analog_io[23]                                                                
-analog_io[24]                                                                |analog_io[24]                                                                
-analog_io[25]                                                                |analog_io[25]                                                                
 analog_io[26]                                                                |analog_io[26]                                                                
-analog_io[27]                                                                |analog_io[27]                                                                
 analog_io[28]                                                                |analog_io[28]                                                                
-flash_csb_zero                                                               |flash_csb_zero                                                               
 flash_csb_one                                                                |flash_csb_one                                                                
-flash_clk_zero                                                               |flash_clk_zero                                                               
 flash_clk_one                                                                |flash_clk_one                                                                
-flash_io0_zero                                                               |flash_io0_zero                                                               
 flash_io0_one                                                                |flash_io0_one                                                                
-flash_io1_zero                                                               |flash_io1_zero                                                               
 flash_io1_one                                                                |flash_io1_one                                                                
-gpio0_zero                                                                   |gpio0_zero                                                                   
 gpio0_one                                                                    |gpio0_one                                                                    
-gpio1_zero                                                                   |gpio1_zero                                                                   
 gpio1_one                                                                    |gpio1_one                                                                    
-spi_SDO_zero                                                                 |spi_SDO_zero                                                                 
-spi_SDO_one                                                                  |spi_SDO_one                                                                  
-spi_SDI_zero                                                                 |spi_SDI_zero                                                                 
 spi_SDI_one                                                                  |spi_SDI_one                                                                  
-spi_CSB_zero                                                                 |spi_CSB_zero                                                                 
 spi_CSB_one                                                                  |spi_CSB_one                                                                  
-spi_SCK_zero                                                                 |spi_SCK_zero                                                                 
 spi_SCK_one                                                                  |spi_SCK_one                                                                  
-UART_Rx_zero                                                                 |UART_Rx_zero                                                                 
 UART_Rx_one                                                                  |UART_Rx_one                                                                  
-UART_Tx_zero                                                                 |UART_Tx_zero                                                                 
 UART_Tx_one                                                                  |UART_Tx_one                                                                  
-flash_io2_zero                                                               |flash_io2_zero                                                               
 flash_io2_one                                                                |flash_io2_one                                                                
-flash_io3_zero                                                               |flash_io3_zero                                                               
-flash_io3_one                                                                |flash_io3_one                                                                
-mask_rev[0]                                                                  |mask_rev[0]                                                                  
-mask_rev[1]                                                                  |mask_rev[1]                                                                  
-mask_rev[2]                                                                  |mask_rev[2]                                                                  
-mask_rev[3]                                                                  |mask_rev[3]                                                                  
-mask_rev[4]                                                                  |mask_rev[4]                                                                  
-mask_rev[5]                                                                  |mask_rev[5]                                                                  
-mask_rev[6]                                                                  |mask_rev[6]                                                                  
-mask_rev[7]                                                                  |mask_rev[7]                                                                  
-mask_rev[8]                                                                  |mask_rev[8]                                                                  
-mask_rev[9]                                                                  |mask_rev[9]                                                                  
-mask_rev[10]                                                                 |mask_rev[10]                                                                 
-mask_rev[11]                                                                 |mask_rev[11]                                                                 
-mask_rev[12]                                                                 |mask_rev[12]                                                                 
-mask_rev[13]                                                                 |mask_rev[13]                                                                 
-mask_rev[14]                                                                 |mask_rev[14]                                                                 
-mask_rev[15]                                                                 |mask_rev[15]                                                                 
-mask_rev[16]                                                                 |mask_rev[16]                                                                 
-mask_rev[17]                                                                 |mask_rev[17]                                                                 
-mask_rev[18]                                                                 |mask_rev[18]                                                                 
-mask_rev[19]                                                                 |mask_rev[19]                                                                 
-mask_rev[20]                                                                 |mask_rev[20]                                                                 
-mask_rev[21]                                                                 |mask_rev[21]                                                                 
-mask_rev[22]                                                                 |mask_rev[22]                                                                 
-mask_rev[23]                                                                 |mask_rev[23]                                                                 
-mask_rev[24]                                                                 |mask_rev[24]                                                                 
-mask_rev[25]                                                                 |mask_rev[25]                                                                 
-mask_rev[26]                                                                 |mask_rev[26]                                                                 
-mask_rev[27]                                                                 |mask_rev[27]                                                                 
-mask_rev[28]                                                                 |mask_rev[28]                                                                 
-mask_rev[29]                                                                 |mask_rev[29]                                                                 
-mask_rev[30]                                                                 |mask_rev[30]                                                                 
-mask_rev[31]                                                                 |mask_rev[31]                                                                 
-vddio                                                                        |vddio                                                                        
-vccd                                                                         |vccd                                                                         
-vssd                                                                         |vssd                                                                         
+(no matching pin)                                                            |resetb_in                                                                    
+vssio                                                                        |(no matching pin)                                                            
 vssio_uq0                                                                    |(no matching pin)                                                            
 vssd_uq0                                                                     |(no matching pin)                                                            
-sub                                                                          |(no matching pin)                                                            
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
+Cell pin lists for openframe_project_wrapper and openframe_project_wrapper altered to match.
 Device classes openframe_project_wrapper and openframe_project_wrapper are equivalent.
 
 Subcircuit summary:
@@ -4991,6 +4703,11 @@ NET mismatches: Class fragments follow (with fanout counts):
 Circuit 1: sg13cmos5l_caravel_openframe                                      |Circuit 2: sg13cmos5l_caravel_openframe                                      
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+Net: sg13cmos5l_padframe_0/resetb_in                                         |Net: resetb_in                                                               
+  sg13_lv_pmos/(1|3) = 1                                                     |  sg13_lv_nmos/(1|3) = 1                                                     
+  sg13_lv_nmos/(1|3) = 1                                                     |  sg13_lv_pmos/(1|3) = 1                                                     
+  openframe_project_wrapper/resetb_in = 1                                    |                                                                             
+                                                                             |                                                                             
 Net: vddio                                                                   |Net: vddio                                                                   
   openframe_project_wrapper/vddio = 1                                        |  openframe_project_wrapper/vddio = 1                                        
   dpantenna/2 = 93                                                           |  dpantenna/2 = 94                                                           
@@ -5021,7 +4738,6 @@ Net: vssd                                                                    |Ne
   sg13cmos5l_RCClampInverter/iovss = 9                                       |                                                                             
   sg13cmos5l_RCClampResistor/sub = 9                                         |                                                                             
   user_id_programming/sub = 1                                                |                                                                             
-  openframe_project_wrapper/vssio = 1                                        |                                                                             
   openframe_project_wrapper/sub = 1                                          |                                                                             
   sg13cmos5l_Clamp_P2N2D/iovss = 14                                          |                                                                             
                                                                              |                                                                             
@@ -5377,19 +5093,19 @@ Net: vssd                                                                    |Ne
                                                                              |  rppd/3 = 1                                                                 
                                                                              |                                                                             
 (no matching net)                                                            |Net: dummy_1285                                                              
-                                                                             |  openframe_project_wrapper/proxysub = 1                                     
+                                                                             |  openframe_project_wrapper/proxyresetb_in = 1                               
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 DEVICE mismatches: Class fragments follow (with node fanout counts):
 Circuit 1: sg13cmos5l_caravel_openframe                                      |Circuit 2: sg13cmos5l_caravel_openframe                                      
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Instance: sg13cmos5l_padframe_0/sg13cmos5l_IOPadIOVss:pad_vssio_0//sg13cmos5 |Instance: padframe/pad_vssio_0/sg13cmos5l_DCPDiode:dcpdiode/dpantenna:dcdiod 
-  1 = 430                                                                    |  1 = 100                                                                    
+  1 = 429                                                                    |  1 = 100                                                                    
   2 = 256                                                                    |  2 = 228                                                                    
                                                                              |                                                                             
 Instance: sg13cmos5l_padframe_0/sg13cmos5l_IOPadIOVss:pad_vssio_0//sg13cmos5 |Instance: padframe/pad_vssio_1/sg13cmos5l_DCPDiode:dcpdiode/dpantenna:dcdiod 
-  1 = 430                                                                    |  1 = 248                                                                    
-  2 = 430                                                                    |  2 = 228                                                                    
+  1 = 429                                                                    |  1 = 248                                                                    
+  2 = 429                                                                    |  2 = 228                                                                    
                                                                              |                                                                             
 (no matching instance)                                                       |Instance: padframe/pad_vssio_0/sg13cmos5l_DCNDiode:dcndiode/dantenna:dcdiode 
                                                                              |  1 = 248                                                                    
@@ -5428,6 +5144,11 @@ NET mismatches: Class fragments follow (with fanout counts):
 Circuit 1: sg13cmos5l_caravel_openframe_final                                |Circuit 2: sg13cmos5l_caravel_openframe_final                                
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+Net: /sg13cmos5l_caravel_openframe_0/sg13cmos5l_padframe_0/resetb_in         |Net: chip_top/resetb_in                                                      
+  sg13_lv_pmos/(1|3) = 1                                                     |  sg13_lv_nmos/(1|3) = 1                                                     
+  sg13_lv_nmos/(1|3) = 1                                                     |  sg13_lv_pmos/(1|3) = 1                                                     
+  openframe_project_wrapper/resetb_in = 1                                    |                                                                             
+                                                                             |                                                                             
 Net: vddio                                                                   |Net: vddio                                                                   
   openframe_project_wrapper/vddio = 1                                        |  openframe_project_wrapper/vddio = 1                                        
   dpantenna/2 = 93                                                           |  dpantenna/2 = 94                                                           
@@ -5458,7 +5179,6 @@ Net: vssd                                                                    |Ne
   sg13cmos5l_RCClampInverter/iovss = 9                                       |                                                                             
   sg13cmos5l_RCClampResistor/sub = 9                                         |                                                                             
   user_id_programming/sub = 1                                                |                                                                             
-  openframe_project_wrapper/vssio = 1                                        |                                                                             
   openframe_project_wrapper/sub = 1                                          |                                                                             
   sg13cmos5l_Clamp_P2N2D/iovss = 14                                          |                                                                             
                                                                              |                                                                             
@@ -5814,19 +5534,19 @@ Net: vssd                                                                    |Ne
                                                                              |  rppd/3 = 1                                                                 
                                                                              |                                                                             
 (no matching net)                                                            |Net: chip_top/dummy_1285                                                     
-                                                                             |  openframe_project_wrapper/proxysub = 1                                     
+                                                                             |  openframe_project_wrapper/proxyresetb_in = 1                               
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 DEVICE mismatches: Class fragments follow (with node fanout counts):
 Circuit 1: sg13cmos5l_caravel_openframe_final                                |Circuit 2: sg13cmos5l_caravel_openframe_final                                
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Instance: sg13cmos5l_caravel_openframe_0//sg13cmos5l_padframe_0/sg13cmos5l_I |Instance: chip_top/padframe/pad_vssio_0/sg13cmos5l_DCPDiode:dcpdiode/dpanten 
-  1 = 430                                                                    |  1 = 100                                                                    
+  1 = 429                                                                    |  1 = 100                                                                    
   2 = 256                                                                    |  2 = 228                                                                    
                                                                              |                                                                             
 Instance: sg13cmos5l_caravel_openframe_0//sg13cmos5l_padframe_0/sg13cmos5l_I |Instance: chip_top/padframe/pad_vssio_1/sg13cmos5l_DCPDiode:dcpdiode/dpanten 
-  1 = 430                                                                    |  1 = 248                                                                    
-  2 = 430                                                                    |  2 = 228                                                                    
+  1 = 429                                                                    |  1 = 248                                                                    
+  2 = 429                                                                    |  2 = 228                                                                    
                                                                              |                                                                             
 (no matching instance)                                                       |Instance: chip_top/padframe/pad_vssio_0/sg13cmos5l_DCNDiode:dcndiode/dantenn 
                                                                              |  1 = 248                                                                    
@@ -5844,6 +5564,9 @@ Circuit 1: sg13cmos5l_caravel_openframe_final                                |Ci
 -----------------------------------------------------------------------------|-----------------------------------------------------------------------------
 vddio                                                                        |vddio                                                                        
 vssd                                                                         |vssio **Mismatch**                                                           
+resetb                                                                       |resetb                                                                       
+option                                                                       |option                                                                       
+gpio[38]                                                                     |gpio[38]                                                                     
 vccd                                                                         |vccd                                                                         
 gpio[35]                                                                     |gpio[35]                                                                     
 gpio[34]                                                                     |gpio[34]                                                                     
@@ -5888,9 +5611,6 @@ gpio[3]                                                                      |gp
 gpio[2]                                                                      |gpio[2]                                                                      
 gpio[1]                                                                      |gpio[1]                                                                      
 gpio[0]                                                                      |gpio[0]                                                                      
-resetb                                                                       |resetb                                                                       
-option                                                                       |option                                                                       
-gpio[38]                                                                     |gpio[38]                                                                     
 (no pin, node is vssd)                                                       |vssd                                                                         
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Cell pin lists for sg13cmos5l_caravel_openframe_final and sg13cmos5l_caravel_openframe_final altered to match.
