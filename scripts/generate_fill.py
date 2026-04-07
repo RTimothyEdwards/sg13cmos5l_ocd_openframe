@@ -257,6 +257,13 @@ if __name__ == '__main__':
     print('set ybase [lindex $fullbox 1]', file=ofile)
     print('', file=ofile)
 
+    # Avoid placing fill in the area between the chip boundary and the
+    # extent of the tiles on the right and top sides by extending fill
+    # block out to the tile edge.  Use these in place of xmax and ymax
+    # where appropriate.
+    print('set tilexmax [expr {$xtiles * $stepwidth}]', file=ofile)
+    print('set tileymax [expr {$ytiles * $stepheight}]', file=ofile)
+
     # Protect the boundary between the layout border and the seal ring
     # If a seal ring does not exist, then the exclusion area will encompass
     # the entire layout, so ensure that doesn't happen.  Selecting GLASS
@@ -282,13 +289,13 @@ if __name__ == '__main__':
     print('    # set ymin [lindex $passivbox 1]', file=ofile)
     print('    # set xmax [lindex $passivbox 2]', file=ofile)
     print('    # set ymax [lindex $passivbox 3]', file=ofile)
-    print('    box values $xmin $ymin $seallx $ymax', file=ofile)
+    print('    box values $xmin $ymin $seallx $tileymax', file=ofile)
     print('    paint FILLBLOCK; paint DIFFBLOCK', file=ofile)
-    print('    box values $xmin $ymin $xmax $seallx', file=ofile)
+    print('    box values $xmin $ymin $tilexmax $seallx', file=ofile)
     print('    paint FILLBLOCK; paint DIFFBLOCK', file=ofile)
-    print('    box values $sealux $ymin $xmax $ymax', file=ofile)
+    print('    box values $sealux $ymin $tilexmax $tileymax', file=ofile)
     print('    paint FILLBLOCK; paint DIFFBLOCK', file=ofile)
-    print('    box values $xmin $sealuy $xmax $ymax', file=ofile)
+    print('    box values $xmin $sealuy $tilexmax $tileymax', file=ofile)
     print('    paint FILLBLOCK; paint DIFFBLOCK', file=ofile)
     # Block fill in the corners
     print('    box position $seallx $seally', file=ofile)

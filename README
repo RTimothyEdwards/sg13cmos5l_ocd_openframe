@@ -247,7 +247,15 @@ To create a new openframe chip with a custom user project:
 
 		pad signal is:		gpio[0]
 		core signals are:	gpio[0]
-					mysig
+					mysig_esd
+
+	Note that the analog pad is slightly different from other pads:
+	For all other pads, the user project wrapper pin names are the
+	same as the padframe core-facing pin names.  However, the analog
+	pad is connected directly to the core-facing non-ESD pin, so in
+	the padframe, the core-facing pin name is the same as the pad name.
+	In the user project wrapper, however, the core-facing non-ESD pin
+	is given the name "mysig".
 
      Signals should not be indexed, as then different signals would
      have different index ranges which would not match the indexes of
